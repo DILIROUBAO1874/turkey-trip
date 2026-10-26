@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>土耳其旅行计划</title>
+<meta name="description" content="土耳其 11 天行程、签证、交通、住宿、预算与注意事项">
+<style>
+  :root{
+    --bg:#f7f1e6; --card:#fffaf2; --ink:#2b2420; --sub:#6e6259;
+    --terra:#b8502e; --iznik:#1f6f8b; --line:#e6d9c4; --gold:#c9932b;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+  header{background:linear-gradient(135deg,#1f6f8b 0%,#164d61 55%,#b8502e 140%);color:#fff;
+    padding:56px 20px 40px;text-align:center}
+  header h1{margin:0;font-size:34px;letter-spacing:2px}
+  header p{margin:10px 0 0;opacity:.88}
+  .route{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:18px;font-size:14px}
+  .route span{background:rgba(255,255,255,.16);padding:4px 12px;border-radius:999px}
+  .route i{opacity:.7;font-style:normal}
+  .updated{margin-top:16px;font-size:13px;opacity:.75}
+  nav{position:sticky;top:0;z-index:10;background:rgba(247,241,230,.95);backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
+  nav a{display:inline-block;padding:12px 14px;color:var(--sub);text-decoration:none;font-size:14px}
+  nav a:hover{color:var(--terra)}
+  main{max-width:860px;margin:0 auto;padding:8px 16px 60px}
+  section{margin-top:36px;scroll-margin-top:56px}
+  h2{font-size:22px;margin:0 0 6px;padding-left:12px;border-left:4px solid var(--terra)}
+  .lead{color:var(--sub);margin:0 0 16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:12px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+  .stat b{display:block;font-size:26px;color:var(--iznik)}
+  .stat small{color:var(--sub)}
+  .day{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start}
+  .day .d{background:var(--iznik);color:#fff;border-radius:10px;text-align:center;padding:8px 0;font-weight:700}
+  .day .d small{display:block;font-weight:400;font-size:10px;opacity:.85;white-space:nowrap;letter-spacing:-.3px}
+  .day h3{margin:0;font-size:17px}
+  .day p{margin:4px 0 0}
+  .day .stay{font-size:13px;color:var(--sub)}
+  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:#f1e2cc;color:var(--terra);margin-left:6px;vertical-align:middle}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  td:first-child,th:first-child{min-width:6.5em}
+  th{color:var(--sub);font-weight:600;font-size:13px}
+  .tbl{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 10px;overflow-x:auto}
+  .good{border-left:4px solid var(--iznik)}
+  .warn{border-left:4px solid var(--gold)}
+  .tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .tips h3{margin:0 0 6px;font-size:16px}
+  .tips ul{margin:0;padding-left:18px}
+  .check{list-style:none;padding:0;margin:0}
+  .check li{padding:7px 0 7px 30px;position:relative;border-bottom:1px dashed var(--line)}
+  .check li:before{content:"";position:absolute;left:4px;top:12px;width:14px;height:14px;border:2px solid var(--iznik);border-radius:4px}
+  .check li.done:before{background:var(--iznik)}
+  .check li.done{color:var(--sub);text-decoration:line-through}
+  a{color:var(--iznik)}
+  footer{text-align:center;color:var(--sub);font-size:13px;padding:24px}
+  @media (max-width:520px){header h1{font-size:28px}.day{grid-template-columns:66px 1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>土耳其旅行计划</h1>
+  <p>11 天经典环线 · 初版，日期和人数待定</p>
+  <div class="route">
+    <span>伊斯坦布尔</span><i>→</i><span>卡帕多奇亚</span><i>→</i><span>棉花堡</span><i>→</i><span>以弗所</span><i>→</i><span>回程</span>
+  </div>
+  <div class="updated">最后更新：2026-10-26 14:28（北京时间）</div>
+</header>
+
+<nav>
+  <a href="#overview">概览</a><a href="#days">每日行程</a><a href="#visa">签证</a><a href="#transport">交通</a><a href="#stay">住宿</a><a href="#budget">预算</a><a href="#tips">注意事项</a><a href="#checklist">行前清单</a>
+</nav>
+
+<main>
+
+<section id="overview">
+  <h2>行程概览</h2>
+  <p class="lead">伊斯坦布尔 4 天、卡帕多奇亚 3 天、棉花堡加以弗所 2 天，留 2 天机动和回程。</p>
+  <div class="stats">
+    <div class="stat"><b>11</b><small>天</small></div>
+    <div class="stat"><b>4</b><small>座城市</small></div>
+    <div class="stat"><b>免签</b><small>中国普通护照</small></div>
+    <div class="stat"><b>1.5–2.5 万</b><small>每人预算（元，估算）</small></div>
+  </div>
+  <div class="tbl">
+    <table>
+      <tr><th>城市</th><th>天数</th><th>主要看什么</th></tr>
+      <tr><td>伊斯坦布尔</td><td>4</td><td>老城清真寺与宫殿、大巴扎、博斯普鲁斯海峡</td></tr>
+      <tr><td>卡帕多奇亚（格雷梅）</td><td>3</td><td>热气球、奇石山谷、地下城</td></tr>
+      <tr><td>棉花堡</td><td>1</td><td>白色钙华梯田、希拉波利斯古城</td></tr>
+      <tr><td>以弗所（塞尔丘克）</td><td>1</td><td>古罗马城遗址、塞尔苏斯图书馆</td></tr>
+      <tr><td>机动 / 回程</td><td>2</td><td>留给天气延误，或去地中海海边（安塔利亚、费特希耶）</td></tr>
+    </table>
+  </div>
+  <div class="card warn" style="margin-top:12px">
+    <b>季节：</b>4–6 月和 9–10 月最舒服。11 月到次年 3 月卡帕多奇亚很冷，热气球常因风取消，行程要留余量。
+  </div>
+</section>
+
+<section id="days">
+  <h2>每日行程</h2>
+  <p class="lead">每天一个重点区域，尽量不走回头路。内陆段坐国内航班，不坐夜车。</p>
+
+  <div class="card day"><div class="d">D1<small>伊斯坦布尔</small></div><div>
+    <h3>抵达</h3><p>买交通卡和电话卡，傍晚去加拉塔桥看日落。</p><p class="stay">住：苏丹艾哈迈德区</p></div></div>
+  <div class="card day"><div class="d">D2<small>伊斯坦布尔</small></div><div>
+    <h3>老城经典</h3><p>圣索菲亚大教堂、蓝色清真寺、地下水宫、托普卡帕宫。</p><p class="stay">住：同上</p></div></div>
+  <div class="card day"><div class="d">D3<small>伊斯坦布尔</small></div><div>
+    <h3>市集与海峡</h3><p>大巴扎、香料市场、博斯普鲁斯游船。</p><p class="stay">住：同上</p></div></div>
+  <div class="card day"><div class="d">D4<small>飞内陆</small></div><div>
+    <h3>到卡帕多奇亚</h3><p>上午飞开塞利或内夫谢希尔，接送到格雷梅，傍晚去爱情谷看日落。</p><p class="stay">住：格雷梅洞穴酒店</p></div></div>
+  <div class="card day"><div class="d">D5<small>卡帕多奇亚</small></div><div>
+    <h3>热气球 + 红线<span class="tag">清晨</span></h3><p>清晨坐热气球；白天红线一日游（露天博物馆、帕夏巴奇）。</p><p class="stay">住：同上</p></div></div>
+  <div class="card day"><div class="d">D6<small>卡帕多奇亚</small></div><div>
+    <h3>绿线一日游</h3><p>地下城、伊赫拉拉峡谷。这天也是热气球的备用日。</p><p class="stay">住：同上</p></div></div>
+  <div class="card day"><div class="d">D7<small>转场</small></div><div>
+    <h3>去棉花堡</h3><p>经伊斯坦布尔转机飞代尼兹利，或坐约 10 小时大巴。</p><p class="stay">住：棉花堡镇</p></div></div>
+  <div class="card day"><div class="d">D8<small>棉花堡</small></div><div>
+    <h3>梯田 → 塞尔丘克</h3><p>上午赤脚走梯田、逛希拉波利斯；下午坐车约 3 小时到塞尔丘克。</p><p class="stay">住：塞尔丘克</p></div></div>
+  <div class="card day"><div class="d">D9<small>以弗所</small></div><div>
+    <h3>古城遗址</h3><p>以弗所古城、叠屋、希瑟庙遗址。</p><p class="stay">住：同上</p></div></div>
+  <div class="card day"><div class="d">D10<small>机动</small></div><div>
+    <h3>海边或补漏</h3><p>去地中海海边，或回伊斯坦布尔补没逛完的。</p><p class="stay">住：视情况</p></div></div>
+  <div class="card day"><div class="d">D11<small>回国</small></div><div>
+    <h3>离境</h3><p>从伊兹密尔或伊斯坦布尔机场回国。</p></div></div>
+</section>
+
+<section id="visa">
+  <h2>签证与入境</h2>
+  <div class="card good">
+    <p style="margin-top:0"><b>中国普通护照旅游免签。</b>2026 年 1 月 2 日起生效，任意 180 天内最多停留 90 天（<a href="https://www.iletisim.gov.tr/english/dis_basinda_turkiye/detay/turkiye-announces-visa-exemption-for-chinese-citizens-xinhua" target="_blank" rel="noopener">土耳其政府公告</a>）。网上不少旅行网站还写着要办电子签，那是旧政策。</p>
+    <ul style="margin-bottom:0">
+      <li>护照有效期至少比离境日多 6 个月，留出空白页</li>
+      <li>备好返程机票和酒店订单，入境可能会被问</li>
+      <li>公务、工作、留学不在免签范围内</li>
+      <li>出发前一周再查一遍土耳其驻华使领馆的最新通知</li>
+    </ul>
+  </div>
+</section>
+
+<section id="transport">
+  <h2>交通</h2>
+  <p class="lead">远的坐国内航班，近的坐大巴或包车。伊斯坦布尔有两个机场，订票时看清是 IST 还是 SAW。</p>
+  <div class="tbl">
+    <table>
+      <tr><th>场景</th><th>推荐方式</th><th>备注</th></tr>
+      <tr><td>国际航班</td><td>土耳其航空直飞伊斯坦布尔 IST</td><td>北上广出发约 11–12 小时</td></tr>
+      <tr><td>伊斯坦布尔 → 卡帕多奇亚</td><td>飞开塞利 ASR 或内夫谢希尔 NAV</td><td>约 1 小时 15 分，酒店可代订接机拼车</td></tr>
+      <tr><td>卡帕多奇亚 → 棉花堡</td><td>长途大巴，或经伊斯坦布尔飞代尼兹利 DNZ</td><td>大巴约 10 小时</td></tr>
+      <tr><td>棉花堡 → 塞尔丘克</td><td>经代尼兹利坐大巴或小巴</td><td>约 3 小时</td></tr>
+      <tr><td>伊斯坦布尔市内</td><td>Istanbulkart 交通卡</td><td>地铁、电车、轮渡通用，一张卡可多人刷</td></tr>
+      <tr><td>打车</td><td>BiTaksi 或 Uber</td><td>路边招手的出租车容易绕路、不打表</td></tr>
+    </table>
+  </div>
+  <p class="lead" style="margin-top:10px">常见国内航司：土耳其航空、AJet、Pegasus。廉航托运行李额度小，记得提前加购。</p>
+</section>
+
+<section id="stay">
+  <h2>住宿建议</h2>
+  <p class="lead">卡帕多奇亚一定要住洞穴酒店，住本身就是体验。伊斯坦布尔 3 晚、格雷梅 3 晚、棉花堡 1 晚、塞尔丘克 2 晚。</p>
+  <div class="tbl">
+    <table>
+      <tr><th>城市</th><th>推荐区域</th><th>理由</th></tr>
+      <tr><td>伊斯坦布尔</td><td>苏丹艾哈迈德</td><td>主要景点走路就到，第一次去最省事</td></tr>
+      <tr><td>伊斯坦布尔</td><td>卡拉柯伊、加拉塔</td><td>更有本地生活气，吃饭选择多</td></tr>
+      <tr><td>卡帕多奇亚</td><td>格雷梅</td><td>热气球接送、一日游都从这里出发；选带天台的，能看热气球</td></tr>
+      <tr><td>棉花堡</td><td>帕穆卡莱镇上</td><td>离梯田入口近，可以一早趁人少去</td></tr>
+      <tr><td>以弗所</td><td>塞尔丘克镇上</td><td>到遗址约 10 分钟车程，小镇安静</td></tr>
+    </table>
+  </div>
+  <div class="card warn" style="margin-top:12px">带天台的洞穴房旺季订得很早，日期一定就先订这一段。</div>
+</section>
+
+<section id="budget">
+  <h2>预算参考</h2>
+  <p class="lead">中等档次每人 11 天约 1.5–2.5 万元，热气球和洞穴酒店的价格浮动最大。</p>
+  <div class="tbl">
+    <table>
+      <tr><th>项目</th><th>估算（每人 · 元）</th><th>说明</th></tr>
+      <tr><td>国际往返机票</td><td>4,000–8,000</td><td>看日期和出发城市</td></tr>
+      <tr><td>国内航班 2–3 段</td><td>800–1,500</td><td>越早订越便宜</td></tr>
+      <tr><td>住宿 10 晚（两人一间均摊）</td><td>3,000–7,000</td><td>洞穴房最贵</td></tr>
+      <tr><td>热气球</td><td>1,200–2,500</td><td>旺季和周末更贵</td></tr>
+      <tr><td>景点门票</td><td>1,000–1,800</td><td>圣索菲亚、托普卡帕、以弗所等</td></tr>
+      <tr><td>一日游与接送</td><td>800–1,500</td><td>红线、绿线、机场接送</td></tr>
+      <tr><td>餐饮</td><td>150–300 / 天</td><td>景区餐厅贵一倍</td></tr>
+    </table>
+  </div>
+  <div class="card warn" style="margin-top:12px">这些价格是按大概行情估的，还没逐项查证。土耳其里拉通胀快，景点门票多按欧元定价，订之前以官网为准。</div>
+</section>
+
+<section id="tips">
+  <h2>注意事项</h2>
+  <p class="lead">最容易踩坑的是付钱和砍价，其次是进清真寺的着装。</p>
+  <div class="tips">
+    <div class="card"><h3>💳 钱和付款</h3><ul>
+      <li>当地用里拉（TRY），大部分店能刷 Visa / Master，支付宝和微信支付基本用不了</li>
+      <li>刷卡时选“按里拉结算”，别选人民币或美元，汇率差很多</li>
+      <li>带些美元或欧元现金，到市区换汇点换小额里拉，机场汇率差</li>
+      <li>取钱优先用银行自己的 ATM（Ziraat、İş Bankası），街边独立 ATM 手续费高</li>
+    </ul></div>
+    <div class="card"><h3>📶 网络</h3><ul>
+      <li>提前买 eSIM，或到当地 Turkcell / Vodafone 门店办卡（要带护照）</li>
+      <li>国内手机号保留漫游，有些 App 登录要收短信验证码</li>
+    </ul></div>
+    <div class="card"><h3>🛡️ 安全与防骗</h3><ul>
+      <li>整体安全，但旅游区小偷多，手机别放裤子后兜</li>
+      <li>陌生人热情带你去酒吧或地毯店，多半是坑，直接拒绝</li>
+      <li>擦鞋匠故意掉刷子让你捡，接着要高价擦鞋，别搭理</li>
+      <li>在大巴扎买东西，可以砍到开价的一半左右</li>
+    </ul></div>
+    <div class="card"><h3>🕌 宗教与礼仪</h3><ul>
+      <li>进清真寺要脱鞋，男女都不露膝盖和肩膀，女生戴头巾</li>
+      <li>礼拜时间清真寺会暂停参观，周五中午停得最久</li>
+      <li>拍当地人，尤其是女性，先问一句</li>
+    </ul></div>
+    <div class="card"><h3>🍽️ 吃和小费</h3><ul>
+      <li>自来水别直接喝，买瓶装水</li>
+      <li>餐厅小费给 5%–10%，账单里已含服务费就不用再给</li>
+      <li>必吃：烤肉、土耳其早餐、陶罐烤肉（卡帕多奇亚特色）、果仁蜜饼</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="checklist">
+  <h2>行前清单</h2>
+  <div class="card"><ul class="check">
+    <li>确认出发日期和同行人数</li>
+    <li>护照有效期剩 6 个月以上</li>
+    <li>订国际往返机票</li>
+    <li>订卡帕多奇亚洞穴酒店（最先订）</li>
+    <li>订热气球，排在到达后的第一个清晨，留一天备用</li>
+    <li>订国内航班和其余酒店</li>
+    <li>准备能在境外用的 Visa / Master 信用卡，开通境外交易</li>
+    <li>买 eSIM 和旅行保险</li>
+    <li>带头巾、好走路的鞋、转换插头（欧标双圆脚）</li>
+    <li>出发前一周再确认一遍免签政策</li>
+  </ul></div>
+  <div class="card warn"><b>还没定的：</b>几月出发、玩几天？几个人，有没有老人或小孩？预算偏省还是偏舒服？要不要加地中海海边那段？</div>
+</section>
+
+</main>
+<footer>行程持续更新中，刷新页面即可看到最新版</footer>
+</body>
+</html>
