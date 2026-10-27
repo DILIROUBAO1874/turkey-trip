@@ -61,6 +61,8 @@
   .check{list-style:none;padding:0;margin:0}
   .check li{padding:7px 0 7px 30px;position:relative;border-bottom:1px dashed var(--line)}
   .check li:before{content:"";position:absolute;left:4px;top:12px;width:14px;height:14px;border:2px solid var(--iznik);border-radius:4px}
+  .check li.done:before{background:var(--iznik)}
+  .check li.done{color:var(--sub);text-decoration:line-through}
   a{color:var(--iznik)}
   .src{font-size:13px;color:var(--sub)}
   .src a{color:var(--sub)}
@@ -72,8 +74,8 @@
 
 <header>
   <h1>土耳其旅行计划</h1>
-  <p>2027 年 2 月 · 两个机票方案对比</p>
-  <div class="updated">最后更新：2026-10-27 00:20（北京时间）</div>
+  <p>2027 年 2/7 – 2/14 · 已订：重庆经阿拉木图往返</p>
+  <div class="updated">最后更新：2026-10-27 23:15（北京时间）</div>
 </header>
 
 <nav>
@@ -84,7 +86,7 @@
 
 <section id="compare">
   <h2>两个方案对比</h2>
-  <p class="lead">B 每人便宜约 3,260 元，但在土耳其要少玩 3 天，换来去程在阿拉木图逛半天。</p>
+  <p class="lead"><b>已订方案 B</b>（去哪儿订单，总价 ¥7,919）。下面的对比留着备查。</p>
   <div class="plans">
     <div class="plan a">
       <div class="name">A · 成都直飞</div>
@@ -121,7 +123,7 @@
 </section>
 
 <section id="planA" class="A">
-  <h2 class="a">方案 A 行程 · 成都直飞 8 天</h2>
+  <h2 class="a">方案 A 行程 · 成都直飞 8 天（未选，备查）</h2>
   <p class="lead">伊斯坦布尔 4 天，再去卡帕多奇亚 3 天看雪景和热气球，最后飞回伊斯坦布尔，坐夜里的航班回国。</p>
 
   <div class="card day"><div class="d">2/6<small>周六</small></div><div>
@@ -145,13 +147,23 @@
 </section>
 
 <section id="planB" class="B">
-  <h2 class="b">方案 B 行程 · 重庆经阿拉木图</h2>
+  <h2 class="b">方案 B 行程 · 重庆经阿拉木图（已订）</h2>
   <p class="lead">伊斯坦布尔 2 天看蓝色清真寺和海峡，卡帕多奇亚 2 天看热气球和自然风景，最后一晚飞回伊斯坦布尔。</p>
+  <div class="tbl" style="margin-bottom:12px">
+    <table>
+      <tr><th>日期</th><th>航班</th><th>时间（当地）</th><th>备注</th></tr>
+      <tr><td>2/7 去程 ①</td><td>飞狮航空 FS7870</td><td>重庆江北 T3 05:55 → 阿拉木图 T2 08:40</td><td>每人托运 1 件 23kg</td></tr>
+      <tr><td>2/7 去程 ②</td><td>阿斯塔纳航空 KC911，A321</td><td>阿拉木图 T2 17:00 → 伊斯坦布尔 21:20</td><td>中转 8 小时 20 分，<b>要在阿拉木图重新托运行李</b></td></tr>
+      <tr><td>2/13 回程 ①</td><td>阿斯塔纳航空 KC914</td><td>伊斯坦布尔 12:20 → 阿拉木图</td><td>—</td></tr>
+      <tr><td>2/13 回程 ②</td><td>飞狮航空 FS7869</td><td>阿拉木图 → 重庆江北 T3，2/14 04:55</td><td>中转约 1 小时 10 分，<b>是否要重新托运待确认</b></td></tr>
+    </table>
+  </div>
+  <div class="card warn"><b>回程中转要先确认：</b>去程订单写明要在阿拉木图重新托运行李，说明这是两家航空拼起来的联程。回程如果也要重新托运，1 小时 10 分基本来不及：要入境、取行李、重新值机、再出境。请在订单里看回程的中转说明，或者问去哪儿客服两件事：一是回程要不要重新托运，二是误机了有没有“中转保障”免费改签。</div>
 
   <div class="card day"><div class="d">2/6<small>周六</small></div><div>
     <h3>成都 → 重庆</h3><p>晚上坐高铁去重庆（约 1–1.5 小时），住江北机场附近。</p><p class="stay">住：重庆江北机场附近</p></div></div>
   <div class="card day"><div class="d kz">2/7<small>周日</small></div><div>
-    <h3>阿拉木图半日游 → 伊斯坦布尔<span class="tag">哈萨克斯坦</span></h3><p>05:55 起飞，早上到阿拉木图，出关进城逛 4–5 小时（见下面的阿拉木图攻略），下午回机场。晚上 21:20 到伊斯坦布尔。</p><p class="stay">住：伊斯坦布尔老城</p></div></div>
+    <h3>阿拉木图半日游 → 伊斯坦布尔<span class="tag">哈萨克斯坦</span></h3><p>05:55 起飞，08:40 到阿拉木图。入境、取行李、寄存行李后进城逛约 4 小时（见下面的阿拉木图攻略），14:30 前回机场重新托运。17:00 起飞，晚上 21:20 到伊斯坦布尔。</p><p class="stay">住：伊斯坦布尔老城</p></div></div>
   <div class="card day"><div class="d">2/8<small>周一</small></div><div>
     <h3>老城清真寺日</h3><p>蓝色清真寺、圣索菲亚大清真寺、地下水宫、托普卡帕宫。</p><p class="stay">住：同上</p></div></div>
   <div class="card day"><div class="d">2/9<small>周二</small></div><div>
@@ -168,29 +180,31 @@
 
 <section id="almaty">
   <h2 class="kz">阿拉木图半日攻略（方案 B）</h2>
-  <p class="lead">中国护照去哈萨克斯坦免签，去程转机停 8 小时 20 分，能出关进城逛 4–5 小时。</p>
+  <p class="lead">中国护照去哈萨克斯坦免签。去程本来就要入境取行李、重新托运，正好进城逛约 4 小时。</p>
   <div class="tbl">
     <table>
       <tr><th>时间（当地）</th><th>做什么</th></tr>
-      <tr><td>约 07:30</td><td>落地，出关。托运行李确认是直挂伊斯坦布尔的，手里只带随身包</td></tr>
-      <tr><td>08:30</td><td>打车进城约 30–40 分钟，先去潘菲洛夫公园看升天大教堂，一座彩色木头教堂</td></tr>
-      <tr><td>09:30</td><td>走路去绿色巴扎，吃早饭、买干果和马奶制品</td></tr>
-      <tr><td>11:00</td><td>坐缆车上科克托别山，看全城和背后的天山雪山</td></tr>
-      <tr><td>12:30</td><td>在市区吃午饭，尝哈萨克手抓肉、抓饭</td></tr>
-      <tr><td>13:15 前</td><td>打车回机场，国际航班提前 2.5 小时到</td></tr>
+      <tr><td>08:40</td><td>落地 T2，入境（免签），取托运行李</td></tr>
+      <tr><td>约 09:30</td><td>行李放到机场寄存处，只背随身包，打车进城约 30–40 分钟</td></tr>
+      <tr><td>10:15</td><td>潘菲洛夫公园看升天大教堂，一座彩色木头教堂</td></tr>
+      <tr><td>11:00</td><td>走路去绿色巴扎，吃早饭、买干果和马奶制品</td></tr>
+      <tr><td>12:00</td><td>坐缆车上科克托别山，看全城和背后的天山雪山，在山上或市区吃午饭</td></tr>
+      <tr><td>13:45 前</td><td>打车回机场，取寄存的行李</td></tr>
+      <tr><td>14:30 前</td><td>到 KC911 柜台重新托运行李、过安检出境，17:00 起飞</td></tr>
     </table>
   </div>
   <div class="tips" style="margin-top:12px">
     <div class="card"><h3>要注意</h3><ul>
-      <li>起飞时间按登机牌为准，倒推 2.5 小时回到机场，宁早勿晚</li>
+      <li>要重新值机托运，最晚 14:30 回到机场，宁早勿晚</li>
+      <li>机场寄存处的位置和价格到了问一下，没有寄存就只能拖着箱子进城，那就只去绿色巴扎</li>
       <li>2 月阿拉木图约 -10 到 0℃，下飞机就要穿好羽绒服</li>
       <li>打车用 Yandex Go，可以选现金付款</li>
       <li>当地用坚戈，机场兑换少量够用就行；城里不少地方能用支付宝</li>
     </ul></div>
     <div class="card"><h3>天气不好或晚点</h3><ul>
-      <li>落地晚了 2 小时以上，就别进城，在机场休息</li>
+      <li>08:40 那班晚点 2 小时以上，就别进城，在机场休息</li>
       <li>天山脚下的 Shymbulak 滑雪场风景更好，但来回要 2 小时以上，这次时间不够</li>
-      <li>回程只停 1 小时 10 分，不能出机场</li>
+      <li>回程只停 1 小时 10 分，不能出机场，一下飞机就找中转柜台</li>
     </ul></div>
   </div>
   <p class="src">免签：中哈互免签证协定 2023-11-10 生效，单次停留不超过 30 天，过境包含在内（<a href="https://www.thepaper.cn/newsDetail_forward_25153451" target="_blank" rel="noopener">澎湃新闻</a>）。支付宝可用度来自游客经验，没核实。</p>
@@ -276,8 +290,9 @@
 <section id="checklist">
   <h2>行前清单</h2>
   <div class="card"><ul class="check">
-    <li>选定方案，尽快买机票（B 显示“少量”）</li>
-    <li>方案 B：确认是一张联程票、行李直挂、托运额度够</li>
+    <li class="done">买机票：已订重庆—伊斯坦布尔往返（去哪儿）</li>
+    <li>问去哪儿客服：回程阿拉木图要不要重新托运？有没有中转保障？</li>
+    <li>订 2/6 晚重庆江北机场附近酒店和成都—重庆高铁</li>
     <li>护照有效期剩 6 个月以上</li>
     <li>订卡帕多奇亚洞穴酒店和热气球（最先订）</li>
     <li>订土耳其国内航班和其余酒店</li>
