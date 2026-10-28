@@ -34,12 +34,22 @@
 
   /* 首屏 */
   .hero{position:relative;margin:18px auto 0;max-width:1100px;padding:0 18px}
-  .hero .ph{position:relative;border-radius:22px;overflow:hidden;height:min(68vh,560px);min-height:380px;
-    background:#173 url(img/balloons.jpg) center 40%/cover}
-  .hero .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,22,.15) 0%,rgba(8,20,22,.05) 40%,rgba(8,20,22,.75) 100%)}
-  .hero h1{position:absolute;left:0;right:0;top:50%;transform:translateY(-62%);z-index:2;margin:0;text-align:center;
-    font-size:clamp(64px,15vw,150px);font-weight:800;letter-spacing:-3px;line-height:1;text-shadow:0 6px 30px rgba(0,0,0,.25)}
-  .hero .sub{position:absolute;left:0;right:0;top:50%;z-index:2;margin-top:clamp(28px,6vw,70px);text-align:center;font-size:15px;opacity:.95;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+  .hero .ph{position:relative;border-radius:22px;overflow:hidden;height:calc(100svh - 120px);min-height:520px;max-height:860px;
+    background:#173 url(img/balloons2.jpg) center 55%/cover;animation:kb 18s ease-out both}
+  @keyframes kb{from{background-size:auto 118%}to{background-size:auto 100%}}
+  @media (min-aspect-ratio:1/1){@keyframes kb{from{background-size:118% auto}to{background-size:100% auto}}}
+  .hero .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,22,.35) 0%,rgba(8,20,22,.1) 30%,rgba(8,20,22,.35) 60%,rgba(8,20,22,.85) 100%)}
+  .hero .cd{position:absolute;left:0;right:0;top:0;bottom:56px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 18px;text-shadow:0 4px 24px rgba(0,0,0,.35)}
+  .hero h1{margin:0;font-size:clamp(30px,7vw,64px);font-weight:800;letter-spacing:-1px;line-height:1}
+  .hero .lab{margin-top:clamp(18px,4vh,34px);font-size:13px;letter-spacing:3px;color:#e9f1ef;opacity:.9}
+  .hero .days{display:flex;align-items:flex-end;justify-content:center;gap:10px;margin-top:4px;line-height:.82}
+  .hero .days b{font-size:clamp(120px,40vw,260px);font-weight:800;letter-spacing:-6px;font-variant-numeric:tabular-nums}
+  .hero .days span{font-size:clamp(22px,6vw,40px);font-weight:700;padding-bottom:.35em;color:var(--green)}
+  .hero .hms{display:flex;gap:clamp(8px,3vw,18px);margin-top:clamp(14px,3vh,26px)}
+  .hero .hms div{min-width:clamp(64px,19vw,96px);padding:8px 0 7px;border-radius:14px;background:rgba(8,20,22,.45);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.14)}
+  .hero .hms b{display:block;font-size:clamp(26px,7.5vw,40px);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+  .hero .hms small{font-size:11px;color:var(--sub);letter-spacing:1px}
+  .hero .sub{margin-top:clamp(16px,3vh,26px);font-size:13px;opacity:.85}
   .strip{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr) auto;margin:-46px 26px 0;
     background:rgba(16,36,39,.92);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
   .strip div{padding:12px 14px;border-right:1px solid rgba(255,255,255,.07)}
@@ -226,8 +236,13 @@
 
 <div class="hero">
   <div class="ph"></div>
-  <h1>Türki<span class="g">ye</span></h1>
-  <div class="sub">蓝色清真寺 · 海边日落 · 卡帕多奇亚热气球</div>
+  <div class="cd">
+    <h1>Türki<span class="g">ye</span></h1>
+    <div class="lab" id="cdlab">距离出发还有</div>
+    <div class="days"><b id="cdd">--</b><span>天</span></div>
+    <div class="hms"><div><b id="cdh">--</b><small>小时</small></div><div><b id="cdm">--</b><small>分</small></div><div><b id="cds">--</b><small>秒</small></div></div>
+    <div class="sub">2027.2.7 05:55 重庆起飞 · 北京时间</div>
+  </div>
   <div class="strip">
     <div><small>出发</small><b>自贡</b></div>
     <div><small>日期</small><b>2.7 – 2.14</b></div>
@@ -237,6 +252,19 @@
   </div>
 </div>
 
+<script>
+(function(){var T=Date.parse('2027-02-07T05:55:00+08:00'),E=Date.parse('2027-02-14T04:55:00+08:00');
+  function p(n){return (n<10?'0':'')+n}
+  function tick(){var now=Date.now(),d=T-now,l=document.getElementById('cdlab');
+    if(d<=0){l.textContent=now<E?'已经在路上啦':'旅行结束，欢迎回家';d=0;}
+    var s=Math.floor(d/1000);
+    document.getElementById('cdd').textContent=Math.floor(s/86400);
+    document.getElementById('cdh').textContent=p(Math.floor(s%86400/3600));
+    document.getElementById('cdm').textContent=p(Math.floor(s%3600/60));
+    document.getElementById('cds').textContent=p(s%60);}
+  tick();setInterval(tick,1000);
+})();
+</script>
 <main class="wrap">
 
 <section id="route">
@@ -436,7 +464,7 @@
   <a href="https://commons.wikimedia.org/wiki/File:The_Blue_Mosque_at_sunset.jpg" target="_blank" rel="noopener">Constantin Barbu</a>（CC BY 2.0）·
   <a href="https://commons.wikimedia.org/wiki/File:Istanbul_ferry_at_sunset_on_the_Bosphorus_-_Tarik_Kaan_Muslu.jpg" target="_blank" rel="noopener">Tarik Kaan Muslu</a>（CC BY-SA 4.0）·
   <a href="https://commons.wikimedia.org/wiki/File:Zenkov_Cathedral,_Almaty.jpg" target="_blank" rel="noopener">Bgag</a>（CC0）<br>
-  最后更新：<span id="upd">2026-10-28 09:08</span>（北京时间）
+  最后更新：<span id="upd">2026-10-28 09:13</span>（北京时间）
 </footer>
 
 <script>
