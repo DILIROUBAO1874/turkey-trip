@@ -1,0 +1,44 @@
+{
+ "mosque": {
+  "title": "File:The Blue Mosque at sunset.jpg",
+  "artist": "Constantin Barbu",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Blue_Mosque_at_sunset.jpg"
+ },
+ "mosque2": {
+  "title": "File:Blue-Mosque-Istanbul-October-2012.jpg",
+  "artist": "Acediscovery",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue-Mosque-Istanbul-October-2012.jpg"
+ },
+ "sunset": {
+  "title": "File:Istanbul ferry at sunset on the Bosphorus - Tarik Kaan Muslu.jpg",
+  "artist": "Tarikkaanmuslu",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Istanbul_ferry_at_sunset_on_the_Bosphorus_-_Tarik_Kaan_Muslu.jpg"
+ },
+ "balloons": {
+  "title": "File:Hot air balloons over valleys near Göreme, Cappadocia at dawn.JPG",
+  "artist": "MusikAnimal",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Hot_air_balloons_over_valleys_near_G%C3%B6reme,_Cappadocia_at_dawn.JPG"
+ },
+ "balloons2": {
+  "title": "File:Balloons over Goreme.JPG",
+  "artist": "José Luiz",
+  "license": "CC BY-SA 3.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Balloons_over_Goreme.JPG"
+ },
+ "zenkov": {
+  "title": "File:Zenkov Cathedral, Almaty.jpg",
+  "artist": "Bgag",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:Zenkov_Cathedral,_Almaty.jpg"
+ },
+ "koktobe": {
+  "title": "File:View of Almaty from Kok-Tobe Cable car..JPG",
+  "artist": "Rudolph.A.furtado",
+  "license": "CC0",
+  "page": "https://commons.wikimedia.org/wiki/File:View_of_Almaty_from_Kok-Tobe_Cable_car..JPG"
+ }
+}

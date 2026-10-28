@@ -2,540 +2,459 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>土耳其之旅 · 2027.2.7–2.14</title>
-<meta name="description" content="2027.2.7–2.14 土耳其之旅：重庆经阿拉木图，伊斯坦布尔蓝色清真寺、海边日落、卡帕多奇亚热气球">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Türkiye · 2027.2.7–2.14</title>
+<meta name="description" content="2027.2.7–2.14 土耳其之旅：自贡出发，经阿拉木图，伊斯坦布尔蓝色清真寺、海边日落、卡帕多奇亚热气球">
+<meta name="theme-color" content="#0b1a1c">
 <style>
   :root{
-    --bg:#f7f1e6; --card:#fffaf2; --ink:#2b2420; --sub:#6e6259;
-    --terra:#b8502e; --iznik:#1f6f8b; --line:#e6d9c4; --gold:#c9932b; --kz:#00a3c4;
+    --bg:#0b1a1c; --bg2:#0f2225; --card:#122a2d; --card2:#163236; --line:#21403f;
+    --ink:#eef4f2; --sub:#93a9a6; --dim:#6b8380;
+    --green:#5cf07a; --gold:#e3b04b; --red:#ff8a7a;
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font:16px/1.7 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
-  .meta{text-align:center;color:var(--sub);font-size:14px;padding:14px 16px 0}
-  .meta span{font-size:12px;opacity:.8}
-  header{background:linear-gradient(135deg,#1f6f8b 0%,#164d61 55%,#b8502e 140%);color:#fff;
-    padding:56px 20px 40px;text-align:center}
-  header h1{margin:0;font-size:32px;letter-spacing:2px}
-  header p{margin:10px 0 0;opacity:.88}
-  .updated{margin-top:16px;font-size:13px;opacity:.75}
-  nav{position:sticky;top:0;z-index:10;background:rgba(247,241,230,.95);backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}
-  nav a{display:inline-block;padding:12px 14px;color:var(--sub);text-decoration:none;font-size:14px}
-  nav a:hover{color:var(--terra)}
-  main{max-width:860px;margin:0 auto;padding:8px 16px 60px}
-  section{margin-top:38px;scroll-margin-top:56px}
-  h2{font-size:22px;margin:0 0 6px;padding-left:12px;border-left:4px solid var(--terra)}
-  h2.a{border-color:var(--iznik)} h2.b{border-color:var(--gold)} h2.kz{border-color:var(--kz)}
-  .lead{color:var(--sub);margin:0 0 16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px}
-  .plans{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
-  .plan{border-radius:14px;padding:16px;border:2px solid var(--line);background:var(--card)}
-  .plan.a{border-color:var(--iznik)} .plan.b{border-color:var(--gold)}
-  .plan .name{font-weight:700;font-size:15px}
-  .plan.a .name{color:var(--iznik)} .plan.b .name{color:#9a6c12}
-  .plan .price{font-size:30px;font-weight:800;margin:4px 0}
-  .plan .days{font-size:15px}
-  .plan .days b{font-size:22px}
-  .plan small{color:var(--sub);display:block;margin-top:4px}
-  .day{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start}
-  .day .d{color:#fff;border-radius:10px;text-align:center;padding:8px 0;font-weight:700}
-  .A .day .d{background:var(--iznik)} .B .day .d{background:var(--gold)} .day .d.kz{background:var(--kz)}
-  .day .d small{display:block;font-weight:400;font-size:10px;opacity:.9;white-space:nowrap}
-  .day h3{margin:0;font-size:17px}
-  .day p{margin:4px 0 0}
-  .day .stay{font-size:13px;color:var(--sub)}
-  .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:#f1e2cc;color:var(--terra);margin-left:6px;vertical-align:middle}
-  table{width:100%;border-collapse:collapse;font-size:15px}
-  th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-  td:first-child,th:first-child{min-width:5.5em}
-  th{color:var(--sub);font-weight:600;font-size:13px}
-  th.a{color:var(--iznik)} th.b{color:#9a6c12}
-  .win{font-weight:700}
-  .tbl{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:6px 10px;overflow-x:auto}
-  .good{border-left:4px solid var(--iznik)}
-  .warn{border-left:4px solid var(--gold)}
-  .tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
-  .tips h3{margin:0 0 6px;font-size:16px}
-  .tips ul{margin:0;padding-left:18px}
-  .check{list-style:none;padding:0;margin:0}
-  .check li{padding:7px 0 7px 30px;position:relative;border-bottom:1px dashed var(--line)}
-  .check li:before{content:"";position:absolute;left:4px;top:12px;width:14px;height:14px;border:2px solid var(--iznik);border-radius:4px}
-  .check li.done:before{background:var(--iznik)}
-  .check li.done{color:var(--sub);text-decoration:line-through}
-  a{color:var(--iznik)}
-  .src{font-size:13px;color:var(--sub)}
-  .src a{color:var(--sub)}
-  footer{text-align:center;color:var(--sub);font-size:13px;padding:24px}
-  @media (max-width:520px){header h1{font-size:26px}.day{grid-template-columns:66px 1fr}.plan .price{font-size:24px}}
+  html{scroll-behavior:smooth;background:var(--bg)}
+  body{margin:0;color:var(--ink);background:var(--bg);
+    font:15px/1.7 -apple-system,"SF Pro Text","Inter","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  a{color:var(--green);text-decoration:none}
+  .g{color:var(--green)}
+
+  /* 顶栏 */
+  .top{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:18px;padding:12px 18px;
+    background:rgba(11,26,28,.86);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+  .logo{font-weight:700;letter-spacing:.3px;white-space:nowrap}
+  .logo i{font-style:normal;color:var(--green);margin-right:6px}
+  .top nav{display:flex;gap:16px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+  .top nav::-webkit-scrollbar{display:none}
+  .top nav a{color:var(--sub);font-size:13px}
+  .top nav a:hover{color:var(--ink)}
+
+  .wrap{max-width:980px;margin:0 auto;padding:0 18px}
+
+  /* 首屏 */
+  .hero{position:relative;margin:18px auto 0;max-width:1100px;padding:0 18px}
+  .hero .ph{position:relative;border-radius:22px;overflow:hidden;height:min(68vh,560px);min-height:380px;
+    background:#173 url(img/balloons.jpg) center 40%/cover}
+  .hero .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,22,.15) 0%,rgba(8,20,22,.05) 40%,rgba(8,20,22,.75) 100%)}
+  .hero h1{position:absolute;left:0;right:0;top:50%;transform:translateY(-62%);z-index:2;margin:0;text-align:center;
+    font-size:clamp(64px,15vw,150px);font-weight:800;letter-spacing:-3px;line-height:1;text-shadow:0 6px 30px rgba(0,0,0,.25)}
+  .hero .sub{position:absolute;left:0;right:0;top:50%;z-index:2;margin-top:clamp(28px,6vw,70px);text-align:center;font-size:15px;opacity:.95;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+  .strip{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr) auto;margin:-46px 26px 0;
+    background:rgba(16,36,39,.92);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+  .strip div{padding:12px 14px;border-right:1px solid rgba(255,255,255,.07)}
+  .strip small{display:block;color:var(--dim);font-size:11px;letter-spacing:.5px}
+  .strip b{font-weight:600;font-size:14px}
+  .strip a.go{display:flex;align-items:center;justify-content:center;padding:0 22px;background:#fff;color:#0b1a1c;font-weight:700;font-size:14px}
+  @media (max-width:640px){
+    .strip{grid-template-columns:1fr 1fr;margin:-40px 12px 0}
+    .strip div:nth-child(2){border-right:0}
+    .strip div:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.07)}
+    .strip a.go{grid-column:1/-1;padding:12px}
+  }
+
+  /* 分节 */
+  section{padding:64px 0 0;scroll-margin-top:56px}
+  .eyebrow{display:flex;align-items:center;gap:8px;color:var(--sub);font-size:12px;letter-spacing:2px;text-transform:uppercase}
+  .eyebrow:before{content:"✳";color:var(--green);font-size:13px}
+  h2{margin:8px 0 6px;font-size:clamp(26px,5vw,38px);font-weight:800;letter-spacing:-.5px;line-height:1.2}
+  .lead{color:var(--sub);margin:0 0 22px;max-width:640px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+  .note{font-size:13px;color:var(--dim);margin-top:10px}
+  .note a{color:var(--sub);text-decoration:underline}
+
+  /* 时间线 */
+  .tz{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+  .tz span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--sub)}
+  .tz b{color:var(--ink);font-weight:600}
+  .tl{position:relative;margin:0;padding:0;list-style:none}
+  .tl:before{content:"";position:absolute;left:96px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--gold),rgba(227,176,75,.35))}
+  .tl li{position:relative;display:grid;grid-template-columns:84px 1fr;gap:30px;padding:0 0 22px}
+  .tl .t{text-align:right;line-height:1.25;padding-top:1px}
+  .tl .t b{display:block;font-size:17px;font-weight:700;font-variant-numeric:tabular-nums}
+  .tl .t small{display:block;font-size:11px;color:var(--dim);margin-top:3px}
+  .tl .t .d{display:block;font-size:11px;color:var(--gold);letter-spacing:1px;margin-bottom:2px}
+  .tl li:before{content:"";position:absolute;left:91px;top:5px;width:12px;height:12px;border-radius:50%;
+    background:var(--bg);border:2px solid var(--gold)}
+  .tl li.key:before{background:var(--green);border-color:var(--green);box-shadow:0 0 0 5px rgba(92,240,122,.15)}
+  .tl li.day:before{width:8px;height:8px;left:93px;top:7px;background:var(--gold);border:0}
+  .tl .c h4{margin:0;font-size:16px;font-weight:700;line-height:1.35}
+  .tl .c p{margin:4px 0 0;color:var(--sub);font-size:13.5px}
+  .tl .c .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+  .tl .c .meta span{font-size:11.5px;padding:2px 9px;border-radius:999px;background:var(--card2);color:var(--sub);border:1px solid var(--line)}
+  .tl .c .meta span.fly{color:var(--green);border-color:rgba(92,240,122,.35);background:rgba(92,240,122,.08)}
+  .tl .c .meta span.warn{color:var(--gold);border-color:rgba(227,176,75,.35);background:rgba(227,176,75,.08)}
+  .tl li.day .c h4{font-size:15px;font-weight:600}
+  @media (max-width:520px){
+    .tl:before{left:74px}
+    .tl li{grid-template-columns:64px 1fr;gap:26px}
+    .tl li:before{left:69px}.tl li.day:before{left:71px}
+    .tl .t b{font-size:15px}
+  }
+
+  /* 图片卡 */
+  .photos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .pc{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+  .pc .im{height:180px;background:center/cover no-repeat}
+  .pc .tx{padding:14px 16px 16px}
+  .pc h3{margin:0 0 4px;font-size:16px}
+  .pc p{margin:0;color:var(--sub);font-size:13.5px}
+
+  /* 阿拉木图 */
+  .split{display:grid;grid-template-columns:1fr 1.25fr;gap:18px;align-items:start}
+  @media (max-width:720px){.split{grid-template-columns:1fr}}
+  .split .im{border-radius:18px;min-height:260px;height:100%;background:url(img/zenkov.jpg) center/cover}
+  .steps{list-style:none;margin:0;padding:0;counter-reset:s}
+  .steps li{display:grid;grid-template-columns:62px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .steps li:last-child{border-bottom:0}
+  .steps b{font-variant-numeric:tabular-nums;color:var(--gold);font-size:13px;padding-top:2px}
+  .steps span{font-size:14px}
+  .steps small{display:block;color:var(--dim);font-size:12px}
+
+  /* 表格 */
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-weight:500;font-size:12px}
+  tr:last-child td{border-bottom:0}
+  .tbl{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:4px 12px;overflow-x:auto}
+
+  .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+  .grid3 h3{margin:0 0 8px;font-size:15px}
+  .grid3 ul{margin:0;padding-left:18px;color:var(--sub);font-size:13.5px}
+  .grid3 li{margin:3px 0}
+  .grid3 li b{color:var(--ink);font-weight:600}
+
+  /* 准备日程 */
+  .phase{position:relative;padding-left:26px;margin-bottom:26px}
+  .phase:before{content:"";position:absolute;left:6px;top:8px;bottom:-26px;width:2px;background:var(--line)}
+  .phase:last-child:before{display:none}
+  .phase:after{content:"";position:absolute;left:1px;top:4px;width:12px;height:12px;border-radius:50%;border:2px solid var(--gold);background:var(--bg)}
+  .phase h3{margin:0;font-size:16px}
+  .phase h3 em{font-style:normal;color:var(--gold);font-size:12px;font-weight:500;margin-left:6px}
+  .todo{list-style:none;margin:10px 0 0;padding:0}
+  .todo label{display:flex;gap:12px;align-items:flex-start;padding:11px 12px;margin:0 -12px;border-radius:12px;cursor:pointer;
+    -webkit-tap-highlight-color:transparent;font-size:14px}
+  .todo label:active{background:rgba(255,255,255,.04)}
+  .todo input{appearance:none;-webkit-appearance:none;flex:0 0 22px;width:22px;height:22px;margin:0;border-radius:7px;
+    border:2px solid #4a6a67;background:transparent;display:grid;place-content:center;cursor:pointer}
+  .todo input:checked{background:var(--green);border-color:var(--green)}
+  .todo input:checked:after{content:"";width:6px;height:11px;border:solid #0b1a1c;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+  .todo input:checked + span{color:var(--dim);text-decoration:line-through}
+  .todo span b{font-weight:600}
+  .prog{display:flex;align-items:center;gap:12px;margin:0 0 22px}
+  .prog .bar{flex:1;height:6px;border-radius:999px;background:var(--card2);overflow:hidden}
+  .prog .bar i{display:block;height:100%;width:0;background:var(--green);transition:width .3s}
+  .prog small{color:var(--sub);font-variant-numeric:tabular-nums}
+
+  footer{margin:80px auto 0;padding:28px 18px 40px;border-top:1px solid var(--line);color:var(--dim);font-size:12px;max-width:980px}
+  footer a{color:var(--sub)}
+
+  /* ===== 开屏拼贴动画 ===== */
+  #intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center;
+    background:rgba(6,16,18,.62);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);
+    animation:inFade .5s ease 5.5s forwards}
+  @keyframes inFade{to{opacity:0;visibility:hidden}}
+  #intro .board{position:relative;width:min(560px,92vw);aspect-ratio:1/1.24;border-radius:24px;overflow:hidden;
+    background:#0f2427;border:1px solid rgba(255,255,255,.08);box-shadow:0 30px 80px rgba(0,0,0,.5);
+    animation:boardIn .5s cubic-bezier(.2,.8,.2,1) both}
+  @keyframes boardIn{from{transform:scale(.92);opacity:0}}
+  #intro .board:before{content:"";position:absolute;inset:0;opacity:.18;
+    background-image:radial-gradient(rgba(255,255,255,.5) 1px,transparent 1px);background-size:18px 18px}
+  #intro svg.route{position:absolute;inset:0;width:100%;height:100%}
+  #intro .route path{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:6 7;stroke-linecap:round}
+  #intro .route .draw{stroke-dasharray:1000;stroke-dashoffset:1000;animation:draw 3.6s ease-in-out .5s forwards}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  #intro .pin{fill:var(--green);opacity:0;animation:pop .3s ease forwards}
+  #intro .pol{position:absolute;width:35%;background:#fbf8f1;padding:3.2% 3.2% 0;border-radius:3px;
+    box-shadow:0 14px 28px rgba(0,0,0,.45);opacity:0;animation:drop .55s cubic-bezier(.2,.9,.25,1.15) forwards}
+  #intro .pol .p{aspect-ratio:1/1;background:center/cover}
+  #intro .pol figcaption{color:#2a2a2a;text-align:center;font-size:clamp(11px,2.8vw,15px);padding:6px 0 9px;font-weight:600}
+  #intro .pol figcaption small{display:block;color:#8a8478;font-weight:400;font-size:.78em}
+  #intro .tape{position:absolute;top:-10px;left:50%;width:34%;height:18px;margin-left:-17%;background:rgba(227,176,75,.55);transform:rotate(-4deg)}
+  @keyframes drop{from{opacity:0;transform:translateY(-40px) rotate(var(--r0)) scale(1.08)}to{opacity:1;transform:rotate(var(--r)) scale(1)}}
+  @keyframes pop{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+  #intro .p1{left:7%;top:5%;--r:-7deg;--r0:-16deg;animation-delay:.35s}
+  #intro .p2{right:7%;top:10%;--r:6deg;--r0:14deg;animation-delay:1.25s}
+  #intro .p3{left:9%;top:41%;--r:5deg;--r0:-6deg;animation-delay:2.15s}
+  #intro .p4{right:8%;top:44%;--r:-5deg;--r0:8deg;animation-delay:3.05s}
+  #intro .stamp{position:absolute;left:50%;top:5%;transform:translate(-50%,-50%) rotate(-10deg);z-index:6;
+    border:2px solid var(--green);color:var(--green);border-radius:10px;padding:4px 10px;font-weight:800;letter-spacing:2px;
+    font-size:clamp(11px,2.8vw,14px);background:rgba(15,36,39,.85);opacity:0;animation:stamp .35s cubic-bezier(.2,.9,.3,1.4) 3.9s forwards}
+  @keyframes stamp{from{opacity:0;transform:translate(-50%,-50%) rotate(-10deg) scale(1.8)}to{opacity:1;transform:translate(-50%,-50%) rotate(-10deg) scale(1)}}
+  #intro .ttl{position:absolute;left:0;right:0;bottom:3.5%;text-align:center;z-index:6;opacity:0;animation:ttl .6s ease 4.2s forwards}
+  #intro .ttl b{display:block;font-size:clamp(34px,9vw,52px);font-weight:800;letter-spacing:-1px;line-height:1}
+  #intro .ttl small{display:block;color:var(--sub);font-size:12px;margin-top:6px;letter-spacing:1px}
+  @keyframes ttl{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){#intro{display:none}}
 </style>
 </head>
 <body>
-<!-- 顶部动画 start -->
-<style>
-  #hero{margin-top:0;position:relative;height:50vh;min-height:330px;max-height:620px;overflow:hidden;background:#cfe7f5;
-    border-radius:0 0 28px 28px;box-shadow:0 10px 30px rgba(31,60,90,.18)}
-  #hero .scene{position:absolute;inset:0;opacity:0}
-  #hero svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible}
-  #hero .s1{background:linear-gradient(180deg,#7cc3ea 0%,#bfe4f6 55%,#f3ead9 100%);opacity:1;animation:hOut .5s ease 1.7s forwards}
-  #hero .s2{background:linear-gradient(180deg,#2c2160 0%,#8e3f7a 38%,#e9706a 62%,#ffc27a 100%);animation:hInOut 2.4s ease 1.6s forwards}
-  #hero .s3{background:linear-gradient(180deg,#86b8e8 0%,#c9d7ef 45%,#f6d2c4 78%,#fbe7d6 100%);animation:hIn .5s ease 3.5s forwards}
-  #hero .s1 .cam,#hero .s2 .cam,#hero .s3 .cam{transform-origin:50% 100%}
-  #hero .s1 .cam{animation:hPush 2.2s ease-out forwards}
-  #hero .s2 .cam{animation:hPush 2.4s ease-out 1.6s both}
-  #hero .s3 .cam{animation:hPush 3s ease-out 3.5s both}
-  @keyframes hOut{to{opacity:0}}
-  @keyframes hIn{to{opacity:1}}
-  @keyframes hInOut{0%{opacity:0}18%,82%{opacity:1}100%{opacity:0}}
-  @keyframes hPush{from{transform:scale(1.06)}to{transform:scale(1)}}
-  /* 文字 */
-  #hero .cap{position:absolute;left:0;right:0;top:9%;text-align:center;color:#fff;opacity:0;
-    text-shadow:0 2px 14px rgba(20,30,60,.35);pointer-events:none}
-  #hero .cap .k{display:inline-block;font-size:12px;letter-spacing:3px;padding:3px 10px;border:1px solid rgba(255,255,255,.7);border-radius:999px;margin-bottom:8px}
-  #hero .cap b{display:block;font-size:28px;letter-spacing:4px;font-weight:800}
-  #hero .c1{opacity:1;animation:hOut .4s ease 1.6s forwards}
-  #hero .c2{animation:hInOut 2.2s ease 1.8s forwards}
-  #hero .c3{animation:hInOut 1.9s ease 3.7s forwards}
-  #hero .c4{animation:hTitle .7s cubic-bezier(.2,.8,.2,1) 5.4s forwards}
-  #hero .c4 b{font-size:34px;letter-spacing:6px}
-  #hero .c4 small{display:block;margin-top:6px;font-size:14px;letter-spacing:2px;opacity:.95}
-  @keyframes hTitle{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-  /* 物件 */
-  #hero .bob{animation:hBob .8s ease-in-out infinite alternate}
-  #hero .bob2{animation:hBob .8s ease-in-out .4s infinite alternate}
-  @keyframes hBob{to{transform:translateY(-3px)}}
-  #hero .blink{transform-box:fill-box;transform-origin:center;animation:hBlink 3s infinite}
-  @keyframes hBlink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.1)}}
-  #hero .wave{transform-box:fill-box;transform-origin:50% 95%;animation:hWave .5s ease-in-out infinite alternate}
-  @keyframes hWave{from{transform:rotate(24deg)}to{transform:rotate(-6deg)}}
-  #hero .drift{animation:hDrift 6s linear infinite}
-  @keyframes hDrift{to{transform:translateX(40px)}}
-  #hero .gull{animation:hGull 2.4s linear forwards}
-  @keyframes hGull{to{transform:translate(50px,-12px)}}
-  #hero .sun{animation:hSun 2.4s ease-in 1.6s both}
-  @keyframes hSun{from{transform:translateY(-10px)}to{transform:translateY(34px)}}
-  #hero .glint{animation:hGlint 1s ease-in-out infinite alternate}
-  @keyframes hGlint{to{opacity:.2}}
-  #hero .ferry{animation:hFerry 2.4s linear 1.6s both}
-  @keyframes hFerry{to{transform:translateX(-50px)}}
-  #hero .rise{animation:hRise 2.2s cubic-bezier(.2,.7,.3,1) both}
-  @keyframes hRise{from{transform:translateY(120px)}to{transform:none}}
-  #hero .float{animation:hFloat 3.2s ease-in-out infinite alternate}
-  @keyframes hFloat{from{transform:translateY(0)}to{transform:translateY(-10px)}}
-  #hero .flame{animation:hFlame .25s ease-in-out infinite alternate}
-  @keyframes hFlame{to{opacity:.3}}
-  @media (max-width:520px){#hero .cap b{font-size:24px}#hero .c4 b{font-size:28px}}
-  @media (prefers-reduced-motion:reduce){
-    #hero *{animation:none!important}
-    #hero .s1,#hero .s2,#hero .c1,#hero .c2,#hero .c3{opacity:0}
-    #hero .s3,#hero .c4{opacity:1}
-  }
-</style>
 
-<section id="hero" aria-label="土耳其之旅">
-  <svg width="0" height="0" style="position:absolute">
-    <defs>
-      <linearGradient id="hMosque" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5677a3"/><stop offset="1" stop-color="#34507a"/></linearGradient>
-      <linearGradient id="hDome" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6d8fbb"/><stop offset=".45" stop-color="#4c6c98"/><stop offset="1" stop-color="#34507a"/></linearGradient>
-      <linearGradient id="hPlaza" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ead9bb"/><stop offset="1" stop-color="#dcc6a2"/></linearGradient>
-      <radialGradient id="hSunG"><stop offset="0" stop-color="#fff3c4"/><stop offset=".55" stop-color="#ffd27a"/><stop offset="1" stop-color="#ffb35a" stop-opacity="0"/></radialGradient>
-      <linearGradient id="hSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a3f7d"/><stop offset="1" stop-color="#2a1d4a"/></linearGradient>
-      <linearGradient id="hRock" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f0c79c"/><stop offset=".6" stop-color="#d9a477"/><stop offset="1" stop-color="#b98058"/></linearGradient>
-      <linearGradient id="hFar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2b9a6"/><stop offset="1" stop-color="#eccab4"/></linearGradient>
-      <linearGradient id="hSnow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef0f4"/></linearGradient>
-      <g id="hBal">
-        <path d="M0 0 C-30 0 -33 36 -11 56 L11 56 C33 36 30 0 0 0Z"/>
-        <path d="M0 0 C-12 0 -13 36 -5 56 L5 56 C13 36 12 0 0 0Z" fill="#fff" opacity=".28"/>
-        <path d="M-27 22 Q0 30 27 22" stroke="#fff" stroke-width="2" fill="none" opacity=".35"/>
-        <path d="M-10 56 L-6 67 M10 56 L6 67" stroke="#5b4636" stroke-width="1.1"/>
-        <rect x="-7" y="66" width="14" height="10" rx="2" fill="#8a6440"/>
-      </g>
-      <!-- 小人 A：红帽、围巾、背 31L 小包 -->
-      <g id="hA">
-        <ellipse cx="0" cy="2" rx="22" ry="4" fill="#000" opacity=".15"/>
-        <rect x="-11" y="-32" width="8.5" height="32" rx="4" fill="#3a3a48"/><rect x="2.5" y="-32" width="8.5" height="32" rx="4" fill="#3a3a48"/>
-        <rect x="-10" y="-4" width="11" height="6" rx="3" fill="#5a3b2e"/><rect x="0" y="-4" width="11" height="6" rx="3" fill="#5a3b2e"/>
-        <rect x="-27" y="-82" width="12" height="40" rx="5" fill="#2f6e64"/>
-        <rect x="-21" y="-88" width="42" height="60" rx="17" fill="#e86a4a"/>
-        <rect x="-21" y="-60" width="42" height="4" fill="#d4573a"/>
-        <path d="M-28 -118 C-32 -90 -24 -76 -18 -74 L18 -74 C24 -76 32 -90 28 -118Z" fill="#3b2a24"/>
-        <circle cx="0" cy="-117" r="22.5" fill="#f6d2b4"/>
-        <path d="M-22 -118 C-21 -141 21 -141 22 -118 C13 -126 -13 -126 -22 -118Z" fill="#3b2a24"/>
-        <path d="M-23.5 -124 C-22 -150 22 -150 23.5 -124Z" fill="#c8342b"/>
-        <path d="M-12 -144 Q0 -149 12 -144" stroke="#e25a4f" stroke-width="2" fill="none"/>
-        <circle cx="0" cy="-150" r="5.5" fill="#fff"/>
-        <rect x="-24.5" y="-128" width="49" height="7" rx="3.5" fill="#a82820"/>
-        <path d="M-17 -92 Q0 -84 17 -92 L15 -84 Q0 -78 -15 -84Z" fill="#f2c14e"/><rect x="6" y="-86" width="7" height="16" rx="3" fill="#f2c14e"/>
-        <ellipse class="blink" cx="-7.5" cy="-114" rx="2.4" ry="3.2" fill="#2b2420"/>
-        <ellipse class="blink" cx="7.5" cy="-114" rx="2.4" ry="3.2" fill="#2b2420"/>
-        <circle cx="-8.5" cy="-115.5" r=".9" fill="#fff"/><circle cx="6.5" cy="-115.5" r=".9" fill="#fff"/>
-        <circle cx="-13" cy="-106" r="3.8" fill="#f4a3a0" opacity=".7"/><circle cx="13" cy="-106" r="3.8" fill="#f4a3a0" opacity=".7"/>
-        <path d="M-3.5 -103 Q0 -99.5 3.5 -103" stroke="#2b2420" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        <rect x="15" y="-82" width="8.5" height="32" rx="4.2" fill="#e86a4a" transform="rotate(-22 19 -82)"/>
-      </g>
-      <!-- 小人 B：黄帽、背 50L 大包、挥手 -->
-      <g id="hB">
-        <ellipse cx="0" cy="2" rx="24" ry="4" fill="#000" opacity=".15"/>
-        <rect x="-11" y="-34" width="8.5" height="34" rx="4" fill="#2f3b52"/><rect x="2.5" y="-34" width="8.5" height="34" rx="4" fill="#2f3b52"/>
-        <rect x="-10" y="-4" width="11" height="6" rx="3" fill="#3b2a24"/><rect x="0" y="-4" width="11" height="6" rx="3" fill="#3b2a24"/>
-        <rect x="14" y="-104" width="20" height="62" rx="8" fill="#6b7a3a"/><rect x="16" y="-110" width="16" height="10" rx="5" fill="#57652e"/>
-        <rect x="-22" y="-92" width="44" height="62" rx="17" fill="#2f7fb0"/>
-        <rect x="-22" y="-76" width="44" height="7" fill="#f2c14e"/>
-        <rect x="-1" y="-92" width="2" height="60" fill="#256a95"/>
-        <circle cx="0" cy="-121" r="22.5" fill="#f3cba8"/>
-        <path d="M-22 -122 C-21 -145 21 -145 22 -122 C10 -132 -10 -132 -22 -122Z" fill="#2b2420"/>
-        <path d="M-23.5 -128 C-22 -155 22 -155 23.5 -128Z" fill="#f2c14e"/>
-        <path d="M-12 -148 Q0 -153 12 -148" stroke="#ffd877" stroke-width="2" fill="none"/>
-        <circle cx="0" cy="-155" r="5.5" fill="#e86a4a"/>
-        <rect x="-24.5" y="-132" width="49" height="7" rx="3.5" fill="#d9a531"/>
-        <ellipse class="blink" cx="-7.5" cy="-118" rx="2.4" ry="3.2" fill="#2b2420"/>
-        <ellipse class="blink" cx="7.5" cy="-118" rx="2.4" ry="3.2" fill="#2b2420"/>
-        <circle cx="-8.5" cy="-119.5" r=".9" fill="#fff"/><circle cx="6.5" cy="-119.5" r=".9" fill="#fff"/>
-        <circle cx="-13" cy="-110" r="3.8" fill="#f4a3a0" opacity=".7"/><circle cx="13" cy="-110" r="3.8" fill="#f4a3a0" opacity=".7"/>
-        <path d="M-3.5 -107 Q0 -103.5 3.5 -107" stroke="#2b2420" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        <rect x="-25" y="-84" width="8.5" height="32" rx="4.2" fill="#2f7fb0" transform="rotate(22 -21 -84)"/>
-        <rect class="wave" x="18" y="-122" width="8.5" height="34" rx="4.2" fill="#2f7fb0"/>
-      </g>
-      <g id="hPair">
-        <g class="bob"><use href="#hA" x="-30" y="0"/></g>
-        <g class="bob2"><use href="#hB" x="30" y="0"/></g>
-      </g>
-    </defs>
-  </svg>
-
-  <!-- 场景 1：蓝色清真寺 -->
-  <div class="scene s1"><svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMax meet"><g class="cam">
-    <g class="drift" fill="#fff" opacity=".9"><ellipse cx="90" cy="120" rx="36" ry="11"/><ellipse cx="116" cy="112" rx="24" ry="12"/><ellipse cx="470" cy="150" rx="30" ry="9"/><ellipse cx="490" cy="143" rx="20" ry="10"/></g>
-    <path class="gull" d="M150 170 q7 -7 14 0 q7 -7 14 0" stroke="#3b4a5a" stroke-width="2" fill="none"/>
-    <g fill="url(#hMosque)">
-      <g><rect x="150" y="170" width="8" height="170"/><path d="M148 170 L154 128 L160 170Z"/><rect x="146" y="214" width="16" height="5" fill="#2d4a6e"/><rect x="147" y="256" width="14" height="4" fill="#2d4a6e"/>
-         <rect x="442" y="170" width="8" height="170"/><path d="M440 170 L446 128 L452 170Z"/><rect x="438" y="214" width="16" height="5" fill="#2d4a6e"/><rect x="439" y="256" width="14" height="4" fill="#2d4a6e"/>
-         <rect x="184" y="190" width="7" height="150"/><path d="M182 190 L187.5 154 L193 190Z"/><rect x="180" y="232" width="15" height="4" fill="#2d4a6e"/>
-         <rect x="409" y="190" width="7" height="150"/><path d="M407 190 L412.5 154 L418 190Z"/><rect x="405" y="232" width="15" height="4" fill="#2d4a6e"/>
-         <rect x="214" y="222" width="6" height="118"/><path d="M212 222 L217 192 L222 222Z"/><rect x="211" y="252" width="12" height="4" fill="#2d4a6e"/>
-         <rect x="380" y="222" width="6" height="118"/><path d="M378 222 L383 192 L388 222Z"/><rect x="377" y="252" width="12" height="4" fill="#2d4a6e"/></g>
-      <rect x="205" y="290" width="190" height="50"/>
-      <path d="M212 290 A42 32 0 0 1 296 290Z" fill="url(#hDome)"/><path d="M304 290 A42 32 0 0 1 388 290Z" fill="url(#hDome)"/>
-      <path d="M236 272 A64 48 0 0 1 364 272 L364 290 L236 290Z" fill="url(#hDome)"/>
-      <path d="M248 238 A52 50 0 0 1 352 238 L352 272 L248 272Z" fill="url(#hDome)"/>
-      <path d="M228 262 A14 12 0 0 1 256 262Z" fill="url(#hDome)"/><path d="M344 262 A14 12 0 0 1 372 262Z" fill="url(#hDome)"/>
-      <rect x="298.5" y="178" width="3" height="12"/><path d="M300 170 a5 5 0 1 0 0.1 0Z" fill="#e8b84a"/>
-      <path d="M232 238 A3 3 0 0 1 238 238 L238 240 L232 240Z" fill="#e8b84a"/>
-    </g>
-    <g fill="#d5e8f5" opacity=".8">
-      <rect x="262" y="248" width="6" height="12" rx="3"/><rect x="278" y="248" width="6" height="12" rx="3"/><rect x="294" y="248" width="6" height="12" rx="3"/><rect x="310" y="248" width="6" height="12" rx="3"/><rect x="326" y="248" width="6" height="12" rx="3"/>
-      <rect x="226" y="304" width="8" height="18" rx="4"/><rect x="246" y="304" width="8" height="18" rx="4"/><rect x="346" y="304" width="8" height="18" rx="4"/><rect x="366" y="304" width="8" height="18" rx="4"/>
-      <path d="M288 340 L288 312 A12 12 0 0 1 312 312 L312 340Z" fill="#c9dff0"/>
-    </g>
-    <g fill="#5d7b4d"><ellipse cx="120" cy="332" rx="26" ry="18"/><ellipse cx="96" cy="336" rx="18" ry="14"/><ellipse cx="490" cy="332" rx="26" ry="18"/><ellipse cx="512" cy="337" rx="16" ry="12"/></g>
-    <rect x="-800" y="338" width="2200" height="300" fill="url(#hPlaza)"/>
-    <rect x="-800" y="338" width="2200" height="4" fill="#cdb48c"/>
-    <g stroke="#d6c09b" stroke-width="1"><path d="M-800 370 H1400"/><path d="M-800 400 H1400"/></g>
-    <g fill="#8a8f99"><ellipse cx="420" cy="392" rx="7" ry="4.5"/><ellipse cx="434" cy="398" rx="6" ry="4"/></g>
-    <use href="#hPair" x="300" y="402"/>
-  </g></svg></div>
-
-  <!-- 场景 2：海边日落 -->
-  <div class="scene s2"><svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMax meet"><g class="cam">
-    <g class="sun"><circle cx="160" cy="262" r="70" fill="url(#hSunG)"/><circle cx="160" cy="262" r="34" fill="#ffe4a0"/></g>
-    <g fill="#4a2a55">
-      <rect x="-800" y="282" width="2200" height="16"/>
-      <path d="M30 282 A26 20 0 0 1 82 282Z"/><rect x="24" y="238" width="4" height="44"/><rect x="84" y="242" width="4" height="40"/>
-      <path d="M250 282 A20 15 0 0 1 290 282Z"/><rect x="246" y="250" width="3" height="32"/><rect x="292" y="252" width="3" height="30"/>
-      <rect x="460" y="236" width="16" height="46"/><path d="M458 236 L468 208 L478 236Z"/>
-      <rect x="330" y="266" width="34" height="16"/><rect x="372" y="270" width="26" height="12"/><rect x="500" y="262" width="30" height="20"/>
-    </g>
-    <rect x="-800" y="298" width="2200" height="60" fill="url(#hSea)"/>
-    <g fill="#ffd38a"><rect class="glint" x="135" y="306" width="50" height="3" rx="1.5"/><rect class="glint" x="122" y="318" width="76" height="3" rx="1.5" style="animation-delay:.3s"/><rect class="glint" x="142" y="331" width="36" height="3" rx="1.5" style="animation-delay:.6s"/></g>
-    <g class="ferry" fill="#1f1636"><rect x="420" y="290" width="44" height="9" rx="3"/><rect x="430" y="283" width="20" height="7" rx="1"/></g>
-    <path class="gull" d="M240 190 q6 -6 12 0 q6 -6 12 0" stroke="#3a2245" stroke-width="2" fill="none"/>
-    <rect x="-800" y="358" width="2200" height="300" fill="#2b2042"/>
-    <g fill="#1b142d"><rect x="-800" y="352" width="2200" height="6"/><rect x="-800" y="330" width="2200" height="3"/>
-      <rect x="40" y="330" width="3" height="24"/><rect x="140" y="330" width="3" height="24"/><rect x="240" y="330" width="3" height="24"/><rect x="340" y="330" width="3" height="24"/><rect x="440" y="330" width="3" height="24"/><rect x="540" y="330" width="3" height="24"/></g>
-    <use href="#hPair" x="300" y="402"/>
-  </g></svg></div>
-
-  <!-- 场景 3：卡帕多奇亚热气球（停在这一幕） -->
-  <div class="scene s3"><svg viewBox="0 0 600 420" preserveAspectRatio="xMidYMax meet"><g class="cam">
-    <g class="rise" style="animation-delay:3.5s"><g class="float"><use href="#hBal" x="110" y="138" fill="#e94f37"/><circle class="flame" cx="110" cy="200" r="3" fill="#ffcf5a"/></g></g>
-    <g class="rise" style="animation-delay:3.7s"><g class="float" style="animation-delay:.8s"><use href="#hBal" x="480" y="128" fill="#f2b33d"/></g></g>
-    <g class="rise" style="animation-delay:3.9s"><g class="float" style="animation-delay:.4s"><use href="#hBal" x="300" y="150" fill="#3a8fd1" transform="translate(300 150) scale(.72) translate(-300 -150)"/></g></g>
-    <g class="rise" style="animation-delay:4.0s"><g class="float" style="animation-delay:1.2s"><use href="#hBal" x="200" y="210" fill="#6bbf8a" transform="translate(200 210) scale(.48) translate(-200 -210)"/></g></g>
-    <g class="rise" style="animation-delay:4.1s"><g class="float" style="animation-delay:1.6s"><use href="#hBal" x="390" y="215" fill="#c36bd6" transform="translate(390 215) scale(.5) translate(-390 -215)"/></g></g>
-    <g class="rise" style="animation-delay:4.2s"><g class="float" style="animation-delay:.6s"><use href="#hBal" x="540" y="200" fill="#ef7aa1" transform="translate(540 200) scale(.42) translate(-540 -200)"/></g></g>
-    <path d="M-800 300 L-800 262 Q60 236 150 258 Q250 238 330 256 Q430 232 520 254 Q600 240 1400 256 L1400 300Z" fill="url(#hFar)"/>
-    <g fill="url(#hRock)">
-      <path d="M40 330 L58 236 Q66 222 74 236 L92 330Z"/><path d="M100 330 L113 262 Q119 252 125 262 L138 330Z"/>
-      <path d="M440 330 L458 228 Q466 214 474 228 L492 330Z"/><path d="M500 330 L511 270 Q516 262 521 270 L532 330Z"/>
-      <path d="M-800 330 L-800 300 Q150 286 300 300 Q450 288 1400 300 L1400 330Z"/>
-    </g>
-    <g fill="#9c6c47"><ellipse cx="66" cy="234" rx="16" ry="8"/><ellipse cx="119" cy="260" rx="12" ry="6"/><ellipse cx="466" cy="226" rx="16" ry="8"/><ellipse cx="516" cy="268" rx="10" ry="5"/></g>
-    <g fill="#fff"><ellipse cx="66" cy="229" rx="14" ry="4.5"/><ellipse cx="119" cy="256" rx="10" ry="3.5"/><ellipse cx="466" cy="221" rx="14" ry="4.5"/><ellipse cx="516" cy="264" rx="8" ry="3"/></g>
-    <rect x="-800" y="328" width="2200" height="300" fill="url(#hSnow)"/>
-    <path d="M-800 328 Q100 320 300 330 Q500 320 1400 328" fill="none" stroke="#dfe3ea" stroke-width="3"/>
-    <use href="#hPair" x="300" y="402"/>
-  </g></svg></div>
-
-  <div class="cap c1"><span class="k">DAY 1–3</span><b>伊斯坦布尔 · 蓝色清真寺</b></div>
-  <div class="cap c2"><span class="k">DAY 3</span><b>博斯普鲁斯 · 海边日落</b></div>
-  <div class="cap c3"><span class="k">DAY 4–6</span><b>卡帕多奇亚 · 热气球</b></div>
-  <div class="cap c4"><b>土耳其之旅</b><small>2027.2.7 – 2.14 · 两个人 · 两个背包</small></div>
-</section>
-<!-- 顶部动画 end -->
-
-<div class="meta">2027.2.7 – 2.14 · 2 人 · 重庆经阿拉木图往返（已订）<br><span>最后更新：2026-10-27 23:48（北京时间）</span></div>
-
-<nav>
-  <a href="#overview">概览</a><a href="#plan">每日行程</a><a href="#almaty">阿拉木图</a><a href="#spots">重点景点</a><a href="#bags">行李</a><a href="#visa">签证</a><a href="#tips">注意事项</a><a href="#budget">预算</a><a href="#checklist">准备日程</a>
-</nav>
-
-<main>
-
-<section id="overview">
-  <h2>行程概览</h2>
-  <p class="lead">8 天 7 晚：去程在阿拉木图逛半天，伊斯坦布尔 3 天，卡帕多奇亚 2 天，2/14 凌晨回到重庆。</p>
-  <div class="plans">
-    <div class="plan b"><div class="name">机票（已付）</div><div class="price">¥7,919</div><small>2 人往返 · 去哪儿订单</small></div>
-    <div class="plan a"><div class="name">在土耳其</div><div class="price">5 天</div><small>2/8 – 2/12 整天，2/7 晚到、2/13 中午走</small></div>
+<!-- 开屏拼贴：屏幕中间，约 6 秒后消失 -->
+<div id="intro" aria-hidden="true">
+  <div class="board">
+    <svg class="route" viewBox="0 0 100 108" preserveAspectRatio="none">
+      <path class="draw" d="M26 24 C50 6 62 14 72 30 C84 52 40 46 30 66 C22 82 60 88 74 72" vector-effect="non-scaling-stroke"/>
+      <circle class="pin" cx="26" cy="24" r="1.4" style="animation-delay:.5s"/>
+      <circle class="pin" cx="72" cy="30" r="1.4" style="animation-delay:1.4s"/>
+      <circle class="pin" cx="30" cy="66" r="1.4" style="animation-delay:2.3s"/>
+      <circle class="pin" cx="74" cy="72" r="1.4" style="animation-delay:3.2s"/>
+    </svg>
+    <figure class="pol p1"><div class="tape"></div><div class="p" style="background-image:url(img/zenkov.jpg)"></div><figcaption>阿拉木图<small>2.7 转机半日</small></figcaption></figure>
+    <figure class="pol p2"><div class="tape"></div><div class="p" style="background-image:url(img/mosque.jpg)"></div><figcaption>蓝色清真寺<small>2.8 伊斯坦布尔</small></figcaption></figure>
+    <figure class="pol p3"><div class="tape"></div><div class="p" style="background-image:url(img/sunset.jpg)"></div><figcaption>海边日落<small>2.9 博斯普鲁斯</small></figcaption></figure>
+    <figure class="pol p4"><div class="tape"></div><div class="p" style="background-image:url(img/balloons2.jpg)"></div><figcaption>热气球<small>2.11 卡帕多奇亚</small></figcaption></figure>
+    <div class="stamp">2 人 · 8 天</div>
+    <div class="ttl"><b>Türki<span class="g">ye</span></b><small>2027.2.7 – 2.14</small></div>
   </div>
-</section>
+</div>
+<script>
+(function(){var el=document.getElementById('intro');if(!el)return;
+  function done(){if(el){el.remove();el=null;}}
+  el.addEventListener('click',function(){el.style.animation='inFade .3s ease forwards';setTimeout(done,320);});
+  setTimeout(done,6000);
+})();
+</script>
 
+<header class="top">
+  <div class="logo"><i>✳</i>Türkiye 2027</div>
+  <nav>
+    <a href="#route">行程路线</a><a href="#almaty">阿拉木图</a><a href="#spots">景点</a><a href="#bags">行李</a><a href="#visa">签证</a><a href="#tips">注意事项</a><a href="#budget">预算</a><a href="#prep">准备日程</a>
+  </nav>
+</header>
 
-<section id="plan" class="B">
-  <h2 class="b">每日行程 · 重庆经阿拉木图</h2>
-  <p class="lead">伊斯坦布尔 2 天看蓝色清真寺和海峡，卡帕多奇亚 2 天看热气球和自然风景，最后一晚飞回伊斯坦布尔。</p>
-  <div class="tbl" style="margin-bottom:12px">
-    <table>
-      <tr><th>日期</th><th>航班</th><th>时间（当地）</th><th>备注</th></tr>
-      <tr><td>2/7 去程 ①</td><td>飞狮航空 FS7870</td><td>重庆江北 T3 05:55 → 阿拉木图 T2 08:40</td><td>每人托运 1 件 23kg（50L 背包托运）</td></tr>
-      <tr><td>2/7 去程 ②</td><td>阿斯塔纳航空 KC911，A321</td><td>阿拉木图 T2 17:00 → 伊斯坦布尔 21:20</td><td>中转 8 小时 20 分，<b>要在阿拉木图重新托运行李</b></td></tr>
-      <tr><td>2/13 回程 ①</td><td>阿斯塔纳航空 KC914</td><td>伊斯坦布尔 12:20 → 阿拉木图</td><td>—</td></tr>
-      <tr><td>2/13 回程 ②</td><td>飞狮航空 FS7869</td><td>阿拉木图 → 重庆江北 T3，2/14 04:55</td><td>中转约 1 小时 10 分，<b>是否要重新托运待确认</b></td></tr>
-    </table>
+<div class="hero">
+  <div class="ph"></div>
+  <h1>Türki<span class="g">ye</span></h1>
+  <div class="sub">蓝色清真寺 · 海边日落 · 卡帕多奇亚热气球</div>
+  <div class="strip">
+    <div><small>出发</small><b>自贡</b></div>
+    <div><small>日期</small><b>2.7 – 2.14</b></div>
+    <div><small>同行</small><b>2 人</b></div>
+    <div><small>行李</small><b>31L + 50L 背包</b></div>
+    <a class="go" href="#route">看行程 →</a>
   </div>
-  <div class="card warn"><b>回程中转要先确认：</b>去程订单写明要在阿拉木图重新托运行李，说明这是两家航空拼起来的联程。回程如果也要重新托运，1 小时 10 分基本来不及：要入境、取行李、重新值机、再出境。请在订单里看回程的中转说明，或者问去哪儿客服两件事：一是回程要不要重新托运，二是误机了有没有“中转保障”免费改签。</div>
+</div>
 
-  <div class="card day"><div class="d">2/6<small>周六</small></div><div>
-    <h3>成都 → 重庆</h3><p>晚上坐高铁去重庆（约 1–1.5 小时），住江北机场附近。</p><p class="stay">住：重庆江北机场附近</p></div></div>
-  <div class="card day"><div class="d kz">2/7<small>周日</small></div><div>
-    <h3>阿拉木图半日游 → 伊斯坦布尔<span class="tag">哈萨克斯坦</span></h3><p>05:55 起飞，08:40 到阿拉木图。入境、取行李、寄存行李后进城逛约 4 小时（见下面的阿拉木图攻略），14:30 前回机场重新托运。17:00 起飞，晚上 21:20 到伊斯坦布尔。</p><p class="stay">住：伊斯坦布尔老城</p></div></div>
-  <div class="card day"><div class="d">2/8<small>周一</small></div><div>
-    <h3>老城清真寺日</h3><p>蓝色清真寺、圣索菲亚大清真寺、地下水宫、托普卡帕宫。</p><p class="stay">住：同上</p></div></div>
-  <div class="card day"><div class="d">2/9<small>周二</small></div><div>
-    <h3>海峡与市集</h3><p>上午坐博斯普鲁斯游船，下午逛大巴扎、香料市场，傍晚去加拉塔塔。</p><p class="stay">住：同上</p></div></div>
-  <div class="card day"><div class="d">2/10<small>周三</small></div><div>
-    <h3>飞卡帕多奇亚</h3><p>早上飞开塞利或内夫谢希尔，下午到格雷梅，傍晚看日落。</p><p class="stay">住：格雷梅洞穴酒店</p></div></div>
-  <div class="card day"><div class="d">2/11<small>周四</small></div><div>
-    <h3>热气球 + 红线<span class="tag">清晨</span></h3><p>清晨坐热气球，白天走红线一日游。</p><p class="stay">住：同上</p></div></div>
-  <div class="card day"><div class="d">2/12<small>周五</small></div><div>
-    <h3>热气球备用日 + 绿线 · 晚上飞回<span class="tag">自然</span></h3><p>头一天热气球如果停飞，今天清晨再试。白天走绿线（地下城、伊赫拉拉峡谷），傍晚飞回伊斯坦布尔。</p><p class="stay">住：伊斯坦布尔机场附近</p></div></div>
-  <div class="card day"><div class="d">2/13<small>周六</small></div><div>
-    <h3>回国</h3><p>上午 9:30 前到机场，12:20 起飞，在阿拉木图转机，2/14 凌晨 04:55 到重庆，再坐高铁回成都。</p></div></div>
+<main class="wrap">
+
+<section id="route">
+  <div class="eyebrow">01 · Route</div>
+  <h2>行程路<span class="g">线</span></h2>
+  <p class="lead">一根线从自贡走到成都。大字是要记住的时间（当地时间），小字是北京时间和备注。</p>
+  <div class="tz">
+    <span><b>哈萨克斯坦</b> = 北京 −3 小时</span>
+    <span><b>土耳其</b> = 北京 −5 小时</span>
+  </div>
+  <ol class="tl">
+    <li><div class="t"><span class="d">2/6 周六</span><b>晚上</b><small>北京时间</small></div>
+      <div class="c"><h4>自贡 → 重庆</h4><p>坐高铁到重庆北站，再坐地铁 10 号线到江北机场附近，住一晚。</p>
+      <div class="meta"><span>高铁约 1.5–2 小时</span></div></div></li>
+    <li><div class="t"><span class="d">2/7 周日</span><b>03:30</b><small>北京时间</small></div>
+      <div class="c"><h4>到重庆江北机场 T3</h4><p>国际航班提前 2.5 小时到，办值机、托运 50L 背包。</p></div></li>
+    <li class="key"><div class="t"><b>05:55</b><small>北京时间</small></div>
+      <div class="c"><h4>✈ FS7870 重庆 → 阿拉木图</h4><p>当地 08:40 落地（北京 11:40）。</p>
+      <div class="meta"><span class="fly">飞行约 5 小时 45 分</span><span>飞狮航空</span></div></div></li>
+    <li><div class="t"><b>08:40</b><small>北京 11:40</small></div>
+      <div class="c"><h4>阿拉木图半日游</h4><p>入境（免签）、取 50L 背包，背着进城。14:30 前回机场重新托运。</p>
+      <div class="meta"><span class="warn">要重新托运行李</span><a href="#almaty"><span>半日路线 ↓</span></a></div></div></li>
+    <li class="key"><div class="t"><b>17:00</b><small>北京 20:00</small></div>
+      <div class="c"><h4>✈ KC911 阿拉木图 → 伊斯坦布尔</h4><p>当地 21:20 落地（北京 2/8 02:20），打车去老城酒店。</p>
+      <div class="meta"><span class="fly">飞行约 6 小时 20 分</span><span>阿斯塔纳航空 · 有餐食</span></div></div></li>
+    <li class="day"><div class="t"><span class="d">2/8 周一</span><b>全天</b><small>北京 = 当地 +5</small></div>
+      <div class="c"><h4>伊斯坦布尔老城</h4><p>蓝色清真寺、圣索菲亚、地下水宫、托普卡帕宫。</p></div></li>
+    <li class="day"><div class="t"><span class="d">2/9 周二</span><b>全天</b></div>
+      <div class="c"><h4>博斯普鲁斯海峡 · 海边日落</h4><p>上午游船，下午大巴扎和香料市场，傍晚去加拉塔桥看日落。</p></div></li>
+    <li class="day"><div class="t"><span class="d">2/10 周三</span><b>上午</b></div>
+      <div class="c"><h4>✈ 飞卡帕多奇亚</h4><p>伊斯坦布尔 → 开塞利或内夫谢希尔，傍晚看奇石山谷日落。住洞穴酒店。</p>
+      <div class="meta"><span class="fly">飞行约 1 小时 15 分</span><span>航班待订</span></div></div></li>
+    <li class="day key"><div class="t"><span class="d">2/11 周四</span><b>清晨</b></div>
+      <div class="c"><h4>热气球 + 红线一日游</h4><p>天亮前接上热气球，白天露天博物馆、精灵烟囱。</p></div></li>
+    <li class="day"><div class="t"><span class="d">2/12 周五</span><b>全天</b></div>
+      <div class="c"><h4>热气球备用 · 绿线 · 傍晚飞回</h4><p>头一天停飞就今早再试；白天地下城、伊赫拉拉峡谷；傍晚飞回伊斯坦布尔，住机场附近。</p>
+      <div class="meta"><span class="fly">飞行约 1 小时 15 分</span><span>航班待订</span></div></div></li>
+    <li class="key"><div class="t"><span class="d">2/13 周六</span><b>12:20</b><small>北京 17:20</small></div>
+      <div class="c"><h4>✈ KC914 伊斯坦布尔 → 阿拉木图</h4><p>上午 9:30 前到机场。当地约 19:35 落地（北京 22:35）。</p>
+      <div class="meta"><span class="fly">飞行约 5 小时 15 分</span><span>阿斯塔纳航空</span></div></div></li>
+    <li class="key"><div class="t"><b>约 20:45</b><small>北京 23:45</small></div>
+      <div class="c"><h4>✈ FS7869 阿拉木图 → 重庆</h4><p>中转只有约 1 小时 10 分，下飞机直接找中转柜台。</p>
+      <div class="meta"><span class="fly">飞行约 5 小时 10 分</span><span class="warn">中转紧，确认要不要重新托运</span></div></div></li>
+    <li><div class="t"><span class="d">2/14 周日</span><b>04:55</b><small>北京时间</small></div>
+      <div class="c"><h4>落地重庆江北 T3</h4><p>在机场休息到地铁、高铁开门。</p></div></li>
+    <li><div class="t"><b>早上</b><small>北京时间</small></div>
+      <div class="c"><h4>重庆 → 成都</h4><p>地铁去重庆北或重庆西站，坐高铁回成都。</p>
+      <div class="meta"><span>高铁约 1–1.5 小时</span></div></div></li>
+  </ol>
+  <p class="note">回程两段的到达和起飞时间，是按订单的 12:20 起飞、04:55 到达，加上公开时刻表推算的，以登机牌为准。</p>
 </section>
 
 <section id="almaty">
-  <h2 class="kz">阿拉木图半日攻略</h2>
-  <p class="lead">中国护照去哈萨克斯坦免签。去程本来就要入境取行李、重新托运，正好进城逛约 4 小时。</p>
-  <div class="tbl">
-    <table>
-      <tr><th>时间（当地）</th><th>做什么</th></tr>
-      <tr><td>08:40</td><td>落地 T2，入境（免签），取托运行李</td></tr>
-      <tr><td>约 09:30</td><td>取出托运的 50L 包，两个包直接背着进城，不用找寄存处；打车约 30–40 分钟</td></tr>
-      <tr><td>10:15</td><td>潘菲洛夫公园看升天大教堂，一座彩色木头教堂</td></tr>
-      <tr><td>11:00</td><td>走路去绿色巴扎，吃早饭、买干果和马奶制品</td></tr>
-      <tr><td>12:00</td><td>坐缆车上科克托别山，看全城和背后的天山雪山，在山上或市区吃午饭</td></tr>
-      <tr><td>13:45 前</td><td>打车回机场</td></tr>
-      <tr><td>14:30 前</td><td>到 KC911 柜台重新托运行李、过安检出境，17:00 起飞</td></tr>
-    </table>
+  <div class="eyebrow">02 · Almaty</div>
+  <h2>阿拉木图半<span class="g">日</span></h2>
+  <p class="lead">中国护照去哈萨克斯坦免签。去程本来就要入境取包、重新托运，正好背着包进城逛约 4 小时。</p>
+  <div class="split">
+    <div class="im" role="img" aria-label="阿拉木图升天大教堂"></div>
+    <div class="card">
+      <ol class="steps">
+        <li><b>08:40</b><span>落地 T2，入境，取 50L 背包<small>两个背包都背着走，不用找寄存处</small></span></li>
+        <li><b>09:30</b><span>打车进城，约 30–40 分钟<small>用 Yandex Go，可选现金付款</small></span></li>
+        <li><b>10:15</b><span>潘菲洛夫公园 · 升天大教堂<small>一座彩色的木头教堂</small></span></li>
+        <li><b>11:00</b><span>绿色巴扎<small>吃早饭，买干果</small></span></li>
+        <li><b>12:00</b><span>科克托别山缆车<small>看全城和背后的天山雪山，顺便吃午饭</small></span></li>
+        <li><b>13:45</b><span>打车回机场</span></li>
+        <li><b>14:30</b><span>KC911 柜台重新托运，过安检出境<small>17:00 起飞</small></span></li>
+      </ol>
+    </div>
   </div>
-  <div class="tips" style="margin-top:12px">
-    <div class="card"><h3>要注意</h3><ul>
-      <li>要重新值机托运，最晚 14:30 回到机场，宁早勿晚</li>
-      <li>50L 的包背着逛有点沉，嫌累就存在机场寄存处，只背 31L 的进城</li>
-      <li>2 月阿拉木图约 -10 到 0℃，下飞机就要穿好羽绒服</li>
-      <li>打车用 Yandex Go，可以选现金付款</li>
-      <li>当地用坚戈，机场兑换少量够用就行；城里不少地方能用支付宝</li>
-    </ul></div>
-    <div class="card"><h3>天气不好或晚点</h3><ul>
-      <li>08:40 那班晚点 2 小时以上，就别进城，在机场休息</li>
-      <li>天山脚下的 Shymbulak 滑雪场风景更好，但来回要 2 小时以上，这次时间不够</li>
-      <li>回程只停 1 小时 10 分，不能出机场，一下飞机就找中转柜台</li>
-    </ul></div>
-  </div>
-  <p class="src">免签：中哈互免签证协定 2023-11-10 生效，单次停留不超过 30 天，过境包含在内（<a href="https://www.thepaper.cn/newsDetail_forward_25153451" target="_blank" rel="noopener">澎湃新闻</a>）。支付宝可用度来自游客经验，没核实。</p>
+  <p class="note">2 月阿拉木图约 −10 到 0℃。落地晚点 2 小时以上就别进城了。免签依据：中哈互免签证协定，2023-11-10 生效，单次停留不超过 30 天（<a href="https://www.thepaper.cn/newsDetail_forward_25153451" target="_blank" rel="noopener">澎湃新闻</a>）。</p>
 </section>
 
 <section id="spots">
-  <h2>重点景点</h2>
-  <p class="lead">按你说的“伊斯坦布尔、蓝色清真寺、自然风景”挑的。</p>
-  <div class="tips">
-    <div class="card"><h3>伊斯坦布尔</h3><ul>
-      <li><b>蓝色清真寺</b>：六根宣礼塔，里面是两万多块蓝色伊兹尼克瓷砖</li>
-      <li><b>圣索菲亚大清真寺</b>：一千五百年的拜占庭穹顶</li>
-      <li><b>苏莱曼尼耶清真寺</b>：人少，院子里能看金角湾</li>
-      <li>博斯普鲁斯海峡、大巴扎、托普卡帕宫</li>
-    </ul></div>
-    <div class="card"><h3>蓝色清真寺怎么看</h3><ul>
-      <li>免费参观，从游客入口进，排队一般不长</li>
-      <li>每天五次礼拜时暂停参观，每次约 1 小时，周五中午停得最久</li>
-      <li>早上开门时去人最少；晚上外面亮灯，从广场拍最好看</li>
-      <li>对面就是圣索菲亚，两座一起看</li>
-    </ul></div>
-    <div class="card"><h3>自然风景</h3><ul>
-      <li><b>卡帕多奇亚</b>：2 月常有雪，白雪盖在奇石上，配上热气球最出片</li>
-      <li><b>伊赫拉拉峡谷</b>：峡谷底沿河徒步，冬天人很少</li>
-      <li><b>博斯普鲁斯海峡</b>：坐船看两岸，欧亚分界</li>
-            <li>时间多的话可以加棉花堡白色梯田，不过要单独多出 2 天</li>
-    </ul></div>
-  </div>
-</section>
-
-<section id="visa">
-  <h2>签证与入境</h2>
-  <div class="card good">
-    <p style="margin-top:0"><b>土耳其：中国普通护照旅游免签。</b>2026 年 1 月 2 日起生效，任意 180 天内最多停留 90 天（<a href="https://www.iletisim.gov.tr/english/dis_basinda_turkiye/detay/turkiye-announces-visa-exemption-for-chinese-citizens-xinhua" target="_blank" rel="noopener">土耳其政府公告</a>）。网上一些旅行网站还说要办电子签，那是旧政策。</p>
-    <p style="margin-bottom:0"><b>哈萨克斯坦：免签，</b>单次停留不超过 30 天。护照有效期留足 6 个月以上，返程机票和酒店订单打印一份带着。</p>
+  <div class="eyebrow">03 · Highlights</div>
+  <h2>重点景<span class="g">点</span></h2>
+  <p class="lead">伊斯坦布尔、蓝色清真寺、自然风景。</p>
+  <div class="photos">
+    <div class="pc"><div class="im" style="background-image:url(img/mosque.jpg)"></div><div class="tx"><h3>蓝色清真寺</h3><p>六根宣礼塔，里面是两万多块蓝色伊兹尼克瓷砖。免费参观，礼拜时暂停，周五中午停得最久；早上开门时人最少。</p></div></div>
+    <div class="pc"><div class="im" style="background-image:url(img/sunset.jpg)"></div><div class="tx"><h3>博斯普鲁斯海峡</h3><p>坐渡轮看欧亚两岸，傍晚在加拉塔桥或海边看日落。</p></div></div>
+    <div class="pc"><div class="im" style="background-image:url(img/balloons2.jpg)"></div><div class="tx"><h3>卡帕多奇亚</h3><p>2 月常有雪，奇石盖着白雪，配上热气球最好看。冬天热气球常因风大停飞，所以留了备用的早上。</p></div></div>
   </div>
 </section>
 
 <section id="bags">
-  <h2>行李：两个背包（31L + 50L）</h2>
-  <p class="lead">50L 托运，31L 随身。最严的是飞狮航空：免费随身行李只有 5–7kg，尺寸 56×23×36cm。</p>
-  <div class="tbl">
-    <table>
-      <tr><th>航段</th><th>随身（31L）</th><th>托运（50L）</th></tr>
-      <tr><td>飞狮航空 FS7870 / FS7869</td><td>1 件，5kg（可能已涨到 7kg），56×23×36cm</td><td>订单含 1 件 23kg</td></tr>
-      <tr><td>阿斯塔纳航空 KC911 / KC914</td><td>1 件 8kg，56×45×25cm，另加 1 件小包</td><td>订单含 1 件 23kg</td></tr>
-      <tr><td>土耳其国内航班</td><td colspan="2">廉航（AJet、Pegasus）的随身和托运额度都小，订票时看清楚，不够就提前加购，比机场便宜</td></tr>
-    </table>
+  <div class="eyebrow">04 · Packing</div>
+  <h2>两个背<span class="g">包</span></h2>
+  <p class="lead">50L 托运，31L 随身。最严的是飞狮航空：免费随身只有 5–7kg，尺寸 56×23×36cm。</p>
+  <div class="tbl"><table>
+    <tr><th>航段</th><th>随身（31L）</th><th>托运（50L）</th></tr>
+    <tr><td>飞狮航空 FS7870 / FS7869</td><td>1 件，5kg（可能已涨到 7kg）</td><td>订单含 1 件 23kg</td></tr>
+    <tr><td>阿斯塔纳航空 KC911 / KC914</td><td>1 件 8kg，另加 1 件小包</td><td>订单含 1 件 23kg</td></tr>
+    <tr><td>土耳其国内航班</td><td colspan="2">廉航额度小，订票时加购行李，比机场便宜</td></tr>
+  </table></div>
+  <div class="grid3" style="margin-top:14px">
+    <div class="card"><h3>托运背包</h3><ul><li>肩带、腰带扣好收紧，或者套托运罩</li><li>充电宝、相机电池只能放随身包</li><li>随身液体每瓶 100ml 以内</li></ul></div>
+    <div class="card"><h3>怎么装得下</h3><ul><li>最厚的羽绒服和雪地靴穿上飞机</li><li>衣服带 3–4 天的量，路上洗</li><li>帽子手套塞进羽绒服口袋</li></ul></div>
   </div>
-  <div class="tips" style="margin-top:12px">
-    <div class="card"><h3>托运背包</h3><ul>
-      <li>把肩带、腰带收紧扣好，或者套一个托运罩，免得被传送带挂住</li>
-      <li>充电宝、相机电池不能托运，放进 31L 的随身包</li>
-      <li>随身包里的液体每瓶不超过 100ml</li>
-    </ul></div>
-    <div class="card"><h3>怎么装得下</h3><ul>
-      <li>最厚的羽绒服和雪地鞋穿在身上上飞机，不占包</li>
-      <li>衣服按 3–4 天准备，酒店手洗或找洗衣房</li>
-      <li>头巾、帽子、手套塞进羽绒服口袋</li>
-    </ul></div>
-    <div class="card"><h3>背包的好处</h3><ul>
-      <li>阿拉木图转机可以背着包直接进城</li>
-      <li>伊斯坦布尔老城石板路、卡帕多奇亚洞穴酒店台阶多，背包比箱子省力</li>
-      <li>回程中转如果要重新托运，取包、走路都比拖箱子快</li>
-    </ul></div>
+  <p class="note">行李额度：飞狮航空来自<a href="https://flyarystan.com/en/baggage" target="_blank" rel="noopener">官网</a>；阿斯塔纳航空来自<a href="https://kupi.com/en/explore/airlines/air-astana" target="_blank" rel="noopener">第三方汇总</a>。以订单为准。</p>
+</section>
+
+<section id="visa">
+  <div class="eyebrow">05 · Entry</div>
+  <h2>签证与入<span class="g">境</span></h2>
+  <div class="grid3">
+    <div class="card"><h3>土耳其 · 免签</h3><ul><li>中国普通护照旅游免签，2026-01-02 起生效</li><li>任意 180 天内最多停留 90 天</li><li>网上说要办电子签的是旧政策</li></ul>
+      <p class="note"><a href="https://www.iletisim.gov.tr/english/dis_basinda_turkiye/detay/turkiye-announces-visa-exemption-for-chinese-citizens-xinhua" target="_blank" rel="noopener">土耳其政府公告</a></p></div>
+    <div class="card"><h3>哈萨克斯坦 · 免签</h3><ul><li>单次停留不超过 30 天，过境也适用</li><li>护照有效期留足 6 个月以上</li><li>行程单、酒店订单打印一份带着</li></ul></div>
   </div>
-  <p class="src">行李额度：飞狮航空来自<a href="https://flyarystan.com/en/baggage" target="_blank" rel="noopener">官网行李页</a>；阿斯塔纳航空来自<a href="https://kupi.com/en/explore/airlines/air-astana" target="_blank" rel="noopener">第三方汇总</a>，没查到官网原文。以订单里写的为准。</p>
 </section>
 
 <section id="tips">
-  <h2>注意事项</h2>
-  <div class="tips">
-    <div class="card"><h3>2 月的天气</h3><ul>
-      <li>伊斯坦布尔 3–10℃，常下雨，带防水外套</li>
-      <li>卡帕多奇亚会到零下 10℃，要穿羽绒服和防滑鞋</li>
-      <li>热气球冬天常因风停飞，尽量留一个备用早上</li>
-    </ul></div>
-    <div class="card"><h3>钱和付款</h3><ul>
-      <li>土耳其大部分店能刷 Visa / Master，刷卡时选“按里拉结算”</li>
-      <li>带些欧元或美元现金，到市区换汇点换里拉</li>
-      <li>支付宝、微信支付在土耳其基本用不了</li>
-    </ul></div>
-    <div class="card"><h3>清真寺礼仪</h3><ul>
-      <li>进门脱鞋，男女都不露膝盖和肩膀，女生戴头巾</li>
-      <li>礼拜时间暂停参观，周五中午停得最久</li>
-    </ul></div>
-    <div class="card"><h3>防骗</h3><ul>
-      <li>陌生人热情带你去酒吧或地毯店，直接拒绝</li>
-      <li>打车用 BiTaksi 或 Uber，路边招手的车容易绕路</li>
-      <li>大巴扎买东西可以砍到开价的一半左右</li>
-    </ul></div>
+  <div class="eyebrow">06 · Tips</div>
+  <h2>注意事<span class="g">项</span></h2>
+  <div class="grid3">
+    <div class="card"><h3>2 月的天气</h3><ul><li>伊斯坦布尔 3–10℃，常下雨</li><li>卡帕多奇亚夜里到零下 10℃</li><li>雪地靴要防滑</li></ul></div>
+    <div class="card"><h3>钱和付款</h3><ul><li>土耳其大部分店能刷 Visa / Master</li><li>刷卡选“按里拉结算”</li><li>支付宝、微信支付基本用不了</li><li>带些欧元或美元现金</li></ul></div>
+    <div class="card"><h3>清真寺礼仪</h3><ul><li>脱鞋，不露膝盖和肩膀</li><li>女生戴头巾</li><li>礼拜时间暂停参观</li></ul></div>
+    <div class="card"><h3>防骗</h3><ul><li>陌生人热情带路去酒吧、地毯店，直接拒绝</li><li>打车用 BiTaksi 或 Uber</li><li>大巴扎可以砍到开价一半左右</li></ul></div>
   </div>
 </section>
 
 <section id="budget">
-  <h2>预算（2 人）</h2>
-  <p class="lead">两个人合计约 2.1–3.1 万元，每人约 1.05–1.55 万。机票是实付价，其余都是估算，春节档往高处估。</p>
-  <div class="tbl">
-    <table>
-      <tr><th>项目</th><th>2 人合计（元）</th><th>说明</th></tr>
-      <tr><td>国际机票</td><td><b>7,919</b></td><td>已付，去哪儿订单</td></tr>
-      <tr><td>成都—重庆高铁往返 + 重庆 1 晚</td><td>约 900</td><td>2/6 晚住江北机场附近</td></tr>
-      <tr><td>土耳其国内交通</td><td>1,600–2,600</td><td>往返卡帕多奇亚的航班加市内交通</td></tr>
-      <tr><td>住宿 6 晚（1 间房）</td><td>3,700–7,000</td><td>伊斯坦布尔 3 晚、洞穴酒店 2 晚、机场附近 1 晚</td></tr>
-      <tr><td>热气球</td><td>2,400–5,000</td><td>春节档偏贵</td></tr>
-      <tr><td>门票和一日游</td><td>2,400–4,000</td><td>托普卡帕、地下水宫、游船、红线绿线；蓝色清真寺免费</td></tr>
-      <tr><td>餐饮</td><td>1,800–3,400</td><td>含阿拉木图半天</td></tr>
-      <tr><td><b>合计</b></td><td><b>约 2.1–3.1 万</b></td><td>每人约 1.05–1.55 万</td></tr>
-    </table>
-  </div>
+  <div class="eyebrow">07 · Budget</div>
+  <h2>预<span class="g">算</span></h2>
+  <p class="lead">2 人合计约 1.3–2.3 万元（不含国际机票），都是估算，春节档往高处估。</p>
+  <div class="tbl"><table>
+    <tr><th>项目</th><th>2 人合计（元）</th><th>说明</th></tr>
+    <tr><td>自贡—重庆、重庆—成都高铁 + 重庆 1 晚</td><td>约 900</td><td>2/6 晚住江北机场附近</td></tr>
+    <tr><td>土耳其国内交通</td><td>1,600–2,600</td><td>往返卡帕多奇亚的航班和市内交通</td></tr>
+    <tr><td>住宿 6 晚（1 间房）</td><td>3,700–7,000</td><td>伊斯坦布尔 3 晚、洞穴酒店 2 晚、机场附近 1 晚</td></tr>
+    <tr><td>热气球</td><td>2,400–5,000</td><td>春节档偏贵</td></tr>
+    <tr><td>门票和一日游</td><td>2,400–4,000</td><td>蓝色清真寺免费</td></tr>
+    <tr><td>餐饮</td><td>1,800–3,400</td><td>含阿拉木图半天</td></tr>
+  </table></div>
 </section>
 
-<section id="checklist">
-  <h2>出发前准备日程</h2>
-  <p class="lead">按“最晚哪天前办完”排。春节前一周快递会停，网购的东西 <b>1 月 20 日前</b>都要收到。</p>
-  <div class="card good">
-    <h3 style="margin:0 0 6px">现在 – 11 月 15 日（出发前 12 周）· 先订最容易满的</h3>
-    <ul class="check">
-      <li class="done">机票：重庆—伊斯坦布尔往返（去哪儿）</li>
-      <li><b>护照</b>：还没办的话马上办，在“移民局 12367”App 或小程序预约，约 7 个工作日出证；有效期要到 2027 年 8 月以后</li>
-      <li>打去哪儿客服 95117：回程阿拉木图要不要重新托运？有没有中转保障？</li>
-      <li>卡帕多奇亚洞穴酒店 2/10、2/11 两晚（春节最先满，选能免费取消的）</li>
-      <li>热气球 2/11 清晨，问清楚停飞能不能改到 2/12</li>
-      <li>土耳其国内航班：2/10 伊斯坦布尔 → 开塞利或内夫谢希尔，2/12 傍晚飞回，订时加购行李</li>
-      <li>伊斯坦布尔老城 2/7–2/9 三晚、2/12 机场附近一晚、2/6 重庆江北机场附近一晚</li>
-      <li><b>信用卡</b>：两人各办一张带 Visa 或 Mastercard 的信用卡，审批加邮寄要 2–3 周</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3 style="margin:0 0 6px">11 月 15 日 – 12 月 20 日（出发前 7 周）· 买装备</h3>
-    <ul class="check">
-      <li>旅行保险：选含航班延误、行李延误、医疗的境外旅行险，买两人份</li>
-      <li>背包：31L 和 50L 各一个，再买一个托运罩或防雨罩</li>
-      <li>长款厚羽绒服 × 2（卡帕多奇亚夜里会到零下 10℃）</li>
-      <li>防滑雪地靴 × 2：<b>早买早穿</b>，出发前至少穿两周，免得磨脚</li>
-      <li>保暖内衣、抓绒衣、厚羊毛袜，各 2–3 套</li>
-      <li>帽子、围巾、触屏手套；女生的头巾或大围巾（进清真寺用）</li>
-      <li>欧标转换插头 × 2（土耳其、哈萨克斯坦都是双圆脚）</li>
-      <li>充电宝 × 2：20000mAh 以内，要有 3C 标志和额定能量标注，否则不让上飞机</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3 style="margin:0 0 6px">12 月 20 日 – 1 月 20 日（出发前 3 周）· 收尾网购</h3>
-    <ul class="check">
-      <li>小物件：分装瓶（每瓶 100ml 以内）、保温杯、暖宝宝、润唇膏、护手霜、常用药（感冒、肠胃、晕车）</li>
-      <li>网购的东西 1 月 20 日前全部收货，春节前快递会停</li>
-      <li>信用卡到手后，在银行 App 里开通“境外交易”</li>
-      <li>手机下载 App：BiTaksi（土耳其打车）、Yandex Go（阿拉木图打车）、谷歌地图、谷歌翻译并下载土耳其语离线包、阿斯塔纳航空、去哪儿</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3 style="margin:0 0 6px">1 月 22 日 – 2 月 3 日 · 高铁、换钱、网络</h3>
-    <ul class="check">
-      <li><b>1 月 22 日</b>：12306 开售 2/6 成都 → 重庆的高铁（提前 15 天放票，春运要准点抢）</li>
-      <li><b>1 月 30 日</b>：12306 开售 2/14 重庆 → 成都的高铁</li>
-      <li>换外币：提前 1–3 天在银行 App 预约，每人换约 300–500 欧元或美元现金；坚戈不用在国内换，到阿拉木图机场换一点就够</li>
-      <li>买 eSIM：土耳其 7 天一张，再加哈萨克斯坦 1 天的；或者开通国内运营商的漫游套餐</li>
-      <li>国内手机号保持开机能收短信，信用卡付款要验证码</li>
-    </ul>
-  </div>
-  <div class="card warn">
-    <h3 style="margin:0 0 6px">2 月 4 日 – 2 月 6 日 · 打包出发</h3>
-    <ul class="check">
-      <li>打包后称重：31L 随身包不超过 5kg（飞狮航空最严），50L 托运包不超过 23kg</li>
-      <li>充电宝、相机电池放随身包；液体放分装瓶，装进透明袋</li>
-      <li>打印一份：机票行程单、所有酒店订单、保险单，护照首页复印件两份</li>
-      <li>护照、信用卡、现金分开放，两人各带一部分</li>
-      <li><b>2/6 晚 20:00（北京时间）</b>：在阿斯塔纳航空官网或 App 给 KC911 线上值机，两人选挨着的座位</li>
-      <li>2/6 晚坐高铁到重庆，住机场附近；2/7 凌晨 03:30 前到江北机场 T3</li>
-    </ul>
-  </div>
+<section id="prep">
+  <div class="eyebrow">08 · Before you go</div>
+  <h2>出发前准备日<span class="g">程</span></h2>
+  <p class="lead">按“最晚哪天前办完”排，点一下就能打勾。春节前一周快递会停，网购的东西 1 月 20 日前都要收到。</p>
+  <div class="prog"><div class="bar"><i id="pbar"></i></div><small id="ptxt">0 / 0</small></div>
+
+  <div class="phase"><h3>现在 – 11 月 15 日<em>先订最容易满的</em></h3><ul class="todo">
+    <li><label><input type="checkbox" data-k="ticket" checked><span>国际机票（去哪儿）</span></label></li>
+    <li><label><input type="checkbox" data-k="passport"><span><b>护照</b>：没办的马上在“移民局 12367”App 预约，约 7 个工作日；有效期要到 2027 年 8 月以后</span></label></li>
+    <li><label><input type="checkbox" data-k="call"><span>打去哪儿客服 95117：回程阿拉木图要不要重新托运？有没有中转保障？</span></label></li>
+    <li><label><input type="checkbox" data-k="cave"><span>卡帕多奇亚洞穴酒店 2/10、2/11 两晚（选能免费取消的）</span></label></li>
+    <li><label><input type="checkbox" data-k="balloon"><span>热气球 2/11 清晨，问清停飞能不能改到 2/12</span></label></li>
+    <li><label><input type="checkbox" data-k="domestic"><span>土耳其国内航班：2/10 去卡帕多奇亚、2/12 傍晚飞回，订时加购行李</span></label></li>
+    <li><label><input type="checkbox" data-k="hotels"><span>伊斯坦布尔老城 2/7–2/9 三晚、2/12 机场附近一晚、2/6 重庆江北机场附近一晚</span></label></li>
+    <li><label><input type="checkbox" data-k="card"><span><b>信用卡</b>：两人各办一张 Visa 或 Mastercard，审批加邮寄要 2–3 周</span></label></li>
+  </ul></div>
+
+  <div class="phase"><h3>11 月 15 日 – 12 月 20 日<em>买装备</em></h3><ul class="todo">
+    <li><label><input type="checkbox" data-k="ins"><span>境外旅行险两人份：含航班延误、行李延误、医疗</span></label></li>
+    <li><label><input type="checkbox" data-k="bags"><span>31L、50L 背包各一个，加托运罩或防雨罩</span></label></li>
+    <li><label><input type="checkbox" data-k="down"><span>长款厚羽绒服 × 2</span></label></li>
+    <li><label><input type="checkbox" data-k="boots"><span>防滑雪地靴 × 2：<b>早买早穿</b>，出发前至少穿两周</span></label></li>
+    <li><label><input type="checkbox" data-k="layers"><span>保暖内衣、抓绒衣、厚羊毛袜，各 2–3 套</span></label></li>
+    <li><label><input type="checkbox" data-k="acc"><span>帽子、围巾、触屏手套；进清真寺用的头巾</span></label></li>
+    <li><label><input type="checkbox" data-k="plug"><span>欧标转换插头 × 2（土耳其、哈萨克斯坦都是双圆脚）</span></label></li>
+    <li><label><input type="checkbox" data-k="power"><span>充电宝 × 2：20000mAh 以内，有 3C 标志和额定能量标注</span></label></li>
+  </ul></div>
+
+  <div class="phase"><h3>12 月 20 日 – 1 月 20 日<em>收尾网购</em></h3><ul class="todo">
+    <li><label><input type="checkbox" data-k="small"><span>分装瓶（100ml 以内）、保温杯、暖宝宝、润唇膏、护手霜、常用药</span></label></li>
+    <li><label><input type="checkbox" data-k="deliver"><span>网购的东西全部收货（春节前快递会停）</span></label></li>
+    <li><label><input type="checkbox" data-k="abroad"><span>信用卡在银行 App 开通“境外交易”</span></label></li>
+    <li><label><input type="checkbox" data-k="apps"><span>下载 App：BiTaksi、Yandex Go、谷歌地图、谷歌翻译（下土耳其语离线包）、阿斯塔纳航空、去哪儿</span></label></li>
+  </ul></div>
+
+  <div class="phase"><h3>1 月 22 日 – 2 月 3 日<em>高铁 · 换钱 · 网络</em></h3><ul class="todo">
+    <li><label><input type="checkbox" data-k="rail1"><span><b>1 月 22 日</b>：12306 开售 2/6 自贡 → 重庆的高铁，准点抢</span></label></li>
+    <li><label><input type="checkbox" data-k="rail2"><span><b>1 月 30 日</b>：12306 开售 2/14 重庆 → 成都的高铁</span></label></li>
+    <li><label><input type="checkbox" data-k="cash"><span>银行 App 预约换外币，每人约 300–500 欧元或美元；坚戈到阿拉木图机场换一点</span></label></li>
+    <li><label><input type="checkbox" data-k="esim"><span>买土耳其 7 天 eSIM，加哈萨克斯坦 1 天；或开通漫游</span></label></li>
+  </ul></div>
+
+  <div class="phase"><h3>2 月 4 日 – 2 月 6 日<em>打包出发</em></h3><ul class="todo">
+    <li><label><input type="checkbox" data-k="weigh"><span>打包称重：31L 随身包 5kg 以内，50L 托运包 23kg 以内</span></label></li>
+    <li><label><input type="checkbox" data-k="print"><span>打印行程单、酒店订单、保险单，护照首页复印件两份</span></label></li>
+    <li><label><input type="checkbox" data-k="split"><span>护照、信用卡、现金分开放，两人各带一部分</span></label></li>
+    <li><label><input type="checkbox" data-k="checkin"><span><b>2/6 晚 20:00</b>（北京时间）：阿斯塔纳航空官网或 App 给 KC911 线上值机，选挨着的座位</span></label></li>
+    <li><label><input type="checkbox" data-k="go"><span>2/6 晚自贡坐高铁到重庆；2/7 凌晨 03:30 前到江北机场 T3</span></label></li>
+  </ul></div>
+  <p class="note">打勾只保存在你自己这台手机上，换手机或给别人看不会同步。</p>
 </section>
 
 </main>
-<footer>行程持续更新中，刷新页面即可看到最新版</footer>
+
+<footer>
+  行程持续更新中，刷新页面就能看到最新版。<br>
+  图片来自 Wikimedia Commons：
+  <a href="https://commons.wikimedia.org/wiki/File:Hot_air_balloons_over_valleys_near_G%C3%B6reme,_Cappadocia_at_dawn.JPG" target="_blank" rel="noopener">MusikAnimal</a>（CC BY-SA 4.0）·
+  <a href="https://commons.wikimedia.org/wiki/File:Balloons_over_Goreme.JPG" target="_blank" rel="noopener">José Luiz</a>（CC BY-SA 3.0）·
+  <a href="https://commons.wikimedia.org/wiki/File:The_Blue_Mosque_at_sunset.jpg" target="_blank" rel="noopener">Constantin Barbu</a>（CC BY 2.0）·
+  <a href="https://commons.wikimedia.org/wiki/File:Istanbul_ferry_at_sunset_on_the_Bosphorus_-_Tarik_Kaan_Muslu.jpg" target="_blank" rel="noopener">Tarik Kaan Muslu</a>（CC BY-SA 4.0）·
+  <a href="https://commons.wikimedia.org/wiki/File:Zenkov_Cathedral,_Almaty.jpg" target="_blank" rel="noopener">Bgag</a>（CC0）<br>
+  最后更新：<span id="upd">2026-10-28 09:08</span>（北京时间）
+</footer>
+
+<script>
+(function(){
+  var boxes=[].slice.call(document.querySelectorAll('.todo input[type=checkbox]'));
+  var KEY='tr27-todo';
+  var saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}');}catch(e){}
+  boxes.forEach(function(b){ if(b.dataset.k in saved) b.checked=!!saved[b.dataset.k]; });
+  function upd(){
+    var n=boxes.filter(function(b){return b.checked;}).length;
+    document.getElementById('pbar').style.width=(n/boxes.length*100)+'%';
+    document.getElementById('ptxt').textContent=n+' / '+boxes.length;
+  }
+  boxes.forEach(function(b){ b.addEventListener('change',function(){
+    saved[b.dataset.k]=b.checked; try{localStorage.setItem(KEY,JSON.stringify(saved));}catch(e){} upd();
+  });});
+  upd();
+})();
+</script>
 </body>
 </html>
